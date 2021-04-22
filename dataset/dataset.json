@@ -1,0 +1,114 @@
+{
+    "CATEGORIES": {
+        "Nature and Application": {
+            "Type of electronics": {
+                "Type 2a": {"background": "#0fffff"},
+                "Type 2b": {"background": "#f0ffff"},
+                "Type 3": {"background": "#ff0fff"}
+            },
+            "Electronic subdomain": {
+                "Generic electronic systems": {"background": "#fff0ff"},
+                "Home automation": {"background": "#ffff0f"},
+                "Wearables / textiles": {"background": "#fffff0"},
+                "Interactive paper": {"background": "#fff0ff"},
+                "Machines": {"background": "#ffff0f"},
+                "Biomedical sensing": {"background": "#fffff0"},
+                "Robotic vehicles / drones": {"background": "#fff0ff"},
+                "Shape changing interfaces": {"background": "#ffff0f"},
+                "Musical instruments": {"background": "#fffff0"},
+                "AI / ML": {"background": "#fffff0"}
+            },
+            "Promoted with user groups": {
+                "K-12 Education": {"background": "#fff0ff"},
+                "Makers": {"background": "#ffff0f"},
+                "Professional background": {"background": "#fffff0"}
+            }
+        },
+        "Assembly of Prototypes": {
+            "Type of connection": {
+                "Individual conductors": {"color": "#0fffff"},
+                "Multi-wire cables": {"color": "#f0ffff"},
+                "Direct module-to-module": {"color": "#ff0fff"},
+                "Wireless": {"color": "#ff0fff"}
+            },
+            "Connection mechanism": {
+                "d": {"background": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            },
+            "Connection topology": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            }
+        },
+        "Deploying and Configuring": {
+            "Programming style": {
+                "a": {"color": "#0fffff"},
+                "b": {"color": "#f0ffff"},
+                "c": {"color": "#ff0fff"}
+            },
+            "Dependencies for programming": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            },
+            "Dependencies during deployment": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            }
+        },
+        "Availability and Adoption": {
+            "Existing use": {
+                "a": {"color": "#0fffff"},
+                "b": {"color": "#f0ffff"},
+                "c": {"color": "#ff0fff"}
+            },
+            "Commercially available": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            },
+            "Third party use": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            },
+            "Open source": {
+                "d": {"color": "#fff0ff"},
+                "e": {"color": "#ffff0f"},
+                "f": {"color": "#fffff0"}
+            }
+        }
+
+    },
+
+    "TOOLKITS": {
+        "a": {
+            "short_title": "a",
+            "image": "",
+            "url": "https://google.com",
+            "notes":"This is a note",
+            "in_scope": true,
+            "labels": {
+                "Type of electronics": ["Type 2a", "Type 3"],
+                "Open source": ["d"]
+            }
+        },
+        "b": {
+            "short_title": "b",
+            "image": "",
+            "url": "https://google.com",
+            "notes":"This is a note",
+            "in_scope": true,
+            "labels": {
+                "Type of electronics": ["Type 2a", "Type 3"],
+                "Open source": ["d"]
+            }
+        }
+
+
+    }
+}
+

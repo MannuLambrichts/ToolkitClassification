@@ -36,7 +36,7 @@
                 </li>
                 <li class="nav-item">
                     <input id="colSelect1" type="checkbox" class="hidden">
-                    <label class="nav-link m-0" for="colSelect1">Filter columns</label>
+                    <label class="nav-link btn m-0" for="colSelect1">Filter columns</label>
                     <div id="columnSelector" class="columnSelector"></div>
                 </li>
             </ul>    
@@ -47,56 +47,191 @@
     <!-- Content -->
     <div class="container-fluid">
         <div class="table-responsive">
-            <table class="table table-bordered tablesorter" id="table">
-    
+            <table class="table table-bordered tablesorter" id="table">    
                 <thead class="thead-light">
-                <tr>
-                    <th class="text-center columnSelector-disable sorter-false" rowspan="3">Nr</th>
-                    <th class="text-center columnSelector-disable" rowspan="3">Name</th>
-                    <th class="text-center" rowspan="3">Short name</th>
-                    <th class="text-center columnSelector-disable sorter-false " rowspan="3">Image</th>
-    
-                    {% for dimension in app_dimensions.1 %}
-                        <th class="text-center sorter-false columnSelector-disable"
-                            colspan="{{ dimension.count }}">{{ dimension.subgroup__group__name }}</th>
-                    {% endfor %}
-                </tr>
-    
-                <tr>
-                    {% for dimension in app_dimensions.2 %}
-                        <th class="text-center sorter-false columnSelector-disable"
-                            colspan="{{ dimension.count }}">{{ dimension.subgroup__name }}</th>
-                    {% endfor %}
-                </tr>
-    
-                <tr>
-                    {% for dimension in app_dimensions.3 %}
-                        <th class="text-center {% if dimension.ordinal %}bg-light{% endif %}" colspan="{{ dimension.count }}" {% if dimension.notes %} data-toggle="tooltip" title="{{dimension.notes}}" {% endif %}>
-                            {{ dimension.name }}
-                            {% if dimension.hidden %}
-                                <i {% if dimension.hidden %}style="background: #dee2e6"{% endif %}>(hidden)</i>
-                            {% endif %}
-                        </th>
-                    {% endfor %}
-                </tr>
-                </thead>
-    
-                <tbody>
-                <!-- filled in by JavaScript -->
-                </tbody>
-            </table>
-    
-    
+                    <tr id="column_group">
+                        <th class="text-center columnSelector-disable sorter-false" colspan="4"></th>
+                    </tr>
+                    <tr id="columns">
+                        <th class="text-center columnSelector-disable sorter-false">Nr</th>
+                        <th class="text-center columnSelector-disable">Name</th>
+                        <th class="text-center">Short name</th>
+                        <th class="text-center columnSelector-disable sorter-false">Image</th>
+                    </tr>        
+                </thead>    
+                <tbody id="toolkits"><!-- filled in by JavaScript --></tbody>
+            </table> 
         </div>
-
     </div>
 
     <script src="static/bootstrap4/js/bootstrap.min.js"></script>
     
     <script>
-        $.getJSON("dataset/categories/categories.js", function( data ) {
-            console.log(data);
+/*
+categories = {
+    "Nature and Application": {
+        "Type of electronics": {
+            "Type 2a": {"background": "#0fffff"},
+            "Type 2b": {"background": "#f0ffff"},
+            "Type 3": {"background": "#ff0fff"}
+        },
+        "Electronic subdomain": {
+            "Generic electronic systems": {"background": "#fff0ff"},
+            "Home automation": {"background": "#ffff0f"},
+            "Wearables / textiles": {"background": "#fffff0"},
+            "Interactive paper": {"background": "#fff0ff"},
+            "Machines": {"background": "#ffff0f"},
+            "Biomedical sensing": {"background": "#fffff0"},
+            "Robotic vehicles / drones": {"background": "#fff0ff"},
+            "Shape changing interfaces": {"background": "#ffff0f"},
+            "Musical instruments": {"background": "#fffff0"},
+            "AI / ML": {"background": "#fffff0"}
+        },
+        "Promoted with user groups": {
+            "K-12 Education": {"background": "#fff0ff"},
+            "Makers": {"background": "#ffff0f"},
+            "Professional background": {"background": "#fffff0"}
+        }
+    },
+    "Assembly of Prototypes": {
+        "Type of connection": {
+            "Individual conductors": {"color": "#0fffff"},
+            "Multi-wire cables": {"color": "#f0ffff"},
+            "Direct module-to-module": {"color": "#ff0fff"},
+            "Wireless": {"color": "#ff0fff"}
+        },
+        "Connection mechanism": {
+            "d": {"background": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Connection topology": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    },
+    "Deploying and Configuring": {
+        "Programming style": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Dependencies for programming": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Dependencies during deployment": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    },
+    "Availability and Adoption": {
+        "Existing use": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Commercially available": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Third party use": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Open source": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    }
+}
+
+toolkits = {
+    "a": {
+        "short_title": "a",
+        "image": "",
+        "url": "https://google.com",
+        "notes":"This is a note",
+        "in_scope": true,
+        "labels": {
+            "Type of electronics": ["Type 2a", "Type 3"],
+            "Open source": ["d"]
+        }
+    } 
+}
+*/
+        
+        $.getJSON("dataset/dataset.json", function(dataset) {  
+            // build the header of the table   
+            categories = dataset["CATEGORIES"];
+        
+            for (const group in categories) {
+                var i = 0;
+                for (const category in categories[group]) {
+                    $('#columns').append('<th class="text-center">' + category + '</th>');
+                    i++;
+                }
+                $('#column_group').append('<th class="text-center sorter-false columnSelector-disable" colspan="' + i + '">' + group + '</th>');
+            }
+        
+
+
+            // build the table
+            tookits = dataset["TOOLKITS"];
+
+            var i = 0;
+            for (const toolkit in toolkits) {
+
+                var row = '<tr>';
+                row += '<th>' + (++i) + '</th>';
+                row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkit + '</a></td>';
+                row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
+                row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+
+                // loop through each category and if it is provided for the current toolkit fill in the table
+                for (const group in categories) {
+                    for (const category in categories[group]) {
+                        row += '<td>';
+                        // check if the category is provided for the toolkit
+                        if (category in toolkits[toolkit]['labels']) {                        
+                            for (const value of toolkits[toolkit]['labels'][category]) {
+                                // check if the value that is provided exists
+                                if (value in categories[group][category]) {
+                                    row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
+                                }                            
+                            }                        
+                        }
+                        row += '</td>';
+                    }
+                }
+
+                row += '</tr>';
+                $('#toolkits').append(row);
+            }
+
+            // table sorter
+            $("#table").tablesorter({
+                theme: 'bootstrap',
+                showProcessing: true,
+                widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
+                widgetOptions: {
+                    filter_reset: '.reset',
+                    filter_hideFilters: true,
+                    filter_cssFilter: "form-control",
+                    stickyHeaders_offset: 62,
+                    columnSelector_container : $('#columnSelector'),
+                    columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                },
+            });
+
         });
+
     </script>
 </body>
 </html>

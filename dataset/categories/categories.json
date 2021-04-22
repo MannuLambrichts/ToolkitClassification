@@ -1,12 +1,75 @@
 {
-"Category A": [
-    {"value": "a", "color": "#ffffff"}, 
-    {"value": "b", "color": "#ff00ff"}, 
-    {"value": "c", "color": "#ffff00"}
-],
-
-"Category B": [
-    {"value": "a", "color": "#ffffff"}, 
-    {"value": "b", "color": "#ff00ff"}
-]
+    "Nature and Application": {
+        "Type of electronics": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Electronic subdomain": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Promoted with user groups": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    },
+    "Assembly of Prototypes": {
+        "Type of connection": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Connection mechanism": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Connection topology": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    },
+    "Deploying and Configuring": {
+        "Programming style": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Dependencies for programming": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Dependencies during deployment": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    },
+    "Availability and Adoption": {
+        "Existing use": {
+            "a": {"color": "#0fffff"},
+            "b": {"color": "#f0ffff"},
+            "c": {"color": "#ff0fff"}
+        },
+        "Commercially available": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Third party use": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        },
+        "Open source": {
+            "d": {"color": "#fff0ff"},
+            "e": {"color": "#ffff0f"},
+            "f": {"color": "#fffff0"}
+        }
+    }
 }
