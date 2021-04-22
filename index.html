@@ -21,21 +21,82 @@
     <title>Classification</title>
 </head>
 <body>
-    <!-- {% block header %}
-        {% include 'website/navbar.html' %}
-    {% endblock %} -->
+    <!-- Header -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Classifications</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="holistics.html">Holistics</a>
+                </li>
+                <li class="nav-item">
+                    <input id="colSelect1" type="checkbox" class="hidden">
+                    <label class="nav-link m-0" for="colSelect1">Filter columns</label>
+                    <div id="columnSelector" class="columnSelector"></div>
+                </li>
+            </ul>    
 
+        </div>
+    </nav>
 
-    <!-- {% block content %}
-    {% endblock %} -->
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table table-bordered tablesorter" id="table">
+    
+                <thead class="thead-light">
+                <tr>
+                    <th class="text-center columnSelector-disable sorter-false" rowspan="3">Nr</th>
+                    <th class="text-center columnSelector-disable" rowspan="3">Name</th>
+                    <th class="text-center" rowspan="3">Short name</th>
+                    <th class="text-center columnSelector-disable sorter-false " rowspan="3">Image</th>
+    
+                    {% for dimension in app_dimensions.1 %}
+                        <th class="text-center sorter-false columnSelector-disable"
+                            colspan="{{ dimension.count }}">{{ dimension.subgroup__group__name }}</th>
+                    {% endfor %}
+                </tr>
+    
+                <tr>
+                    {% for dimension in app_dimensions.2 %}
+                        <th class="text-center sorter-false columnSelector-disable"
+                            colspan="{{ dimension.count }}">{{ dimension.subgroup__name }}</th>
+                    {% endfor %}
+                </tr>
+    
+                <tr>
+                    {% for dimension in app_dimensions.3 %}
+                        <th class="text-center {% if dimension.ordinal %}bg-light{% endif %}" colspan="{{ dimension.count }}" {% if dimension.notes %} data-toggle="tooltip" title="{{dimension.notes}}" {% endif %}>
+                            {{ dimension.name }}
+                            {% if dimension.hidden %}
+                                <i {% if dimension.hidden %}style="background: #dee2e6"{% endif %}>(hidden)</i>
+                            {% endif %}
+                        </th>
+                    {% endfor %}
+                </tr>
+                </thead>
+    
+                <tbody>
+                <!-- filled in by JavaScript -->
+                </tbody>
+            </table>
+    
+    
+        </div>
 
+    </div>
 
     <script src="static/bootstrap4/js/bootstrap.min.js"></script>
-    <script> $(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();}); </script>
-
-    <!-- {% block javascript %}
-    {% endblock %} -->
-
-
+    
+    <script>
+        $.getJSON("dataset/categories/categories.js", function( data ) {
+            console.log(data);
+        });
+    </script>
 </body>
 </html>
