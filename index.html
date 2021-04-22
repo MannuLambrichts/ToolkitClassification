@@ -184,6 +184,11 @@ toolkits = {
 
                 // build the table
                 var i = 0;
+
+
+                var ready = 0; // toolkits that are ready
+                var total = Object.keys(toolkit_files).length; // number of toolkits that need to be loaded
+
                 for (const file in toolkit_files) {
 
                     $.getJSON(toolkit_files[file], function(toolkit) {
@@ -213,25 +218,28 @@ toolkits = {
 
                         row += '</tr>';
                         $('#toolkits').append(row);
+
+                        ready++;
+
+                        // we processed the last toolkit so we can enable the sorting
+                        if (ready == total) {
+                            // table sorter
+                            $("#table").tablesorter({
+                                theme: 'bootstrap',
+                                showProcessing: true,
+                                widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
+                                widgetOptions: {
+                                    filter_reset: '.reset',
+                                    filter_hideFilters: true,
+                                    filter_cssFilter: "form-control",
+                                    stickyHeaders_offset: 62,
+                                    columnSelector_container : $('#columnSelector'),
+                                    columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                                },
+                            });
+                        }
                     });
-
-                }
-
-                // table sorter
-                $("#table").tablesorter({
-                    theme: 'bootstrap',
-                    showProcessing: true,
-                    widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
-                    widgetOptions: {
-                        filter_reset: '.reset',
-                        filter_hideFilters: true,
-                        filter_cssFilter: "form-control",
-                        stickyHeaders_offset: 62,
-                        columnSelector_container : $('#columnSelector'),
-                        columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
-                    },
-                });
-
+                }               
             });
         });
 
