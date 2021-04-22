@@ -190,17 +190,17 @@ toolkits = {
 
                     var row = '<tr>';
                     row += '<th>' + (++i) + '</th>';
-                    row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkit + '</a></td>';
-                    row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
-                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+                    row += '<td><a href="' + toolkit['url'] + '" target="_blank">' + toolkit['title'] + '</a></td>';
+                    row += '<td class="font-italic">' + toolkit['short_title'] + '</td>';
+                    row += '<td>' + (toolkit['image'] === "" ? '' : '<img src="' + toolkit['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
 
                     // loop through each category and if it is provided for the current toolkit fill in the table
                     for (const group in categories) {
                         for (const category in categories[group]) {
                             row += '<td>';
                             // check if the category is provided for the toolkit
-                            if (category in toolkits[toolkit]['labels']) {                        
-                                for (const value of toolkits[toolkit]['labels'][category]) {
+                            if (category in toolkit['labels']) {                        
+                                for (const value of toolkit['labels'][category]) {
                                     // check if the value that is provided exists
                                     if (value in categories[group][category]) {
                                         row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
