@@ -1,0 +1,25 @@
+{
+	"title": "Cubit",
+	"short_title": "Cubit",
+	"image": "/toolkits/media/photos/22.jpg",
+	"url": "https://cubit.cc/",
+	"notes": "Cubit is designed to grow with kids—one Cubit kit and our library of hands-on projects will keep them engaged for years to come.
+
+Cubit’s dynamic learning activities enable students and their families to build science, technology, engineering, arts, and mathematics (STEAM) knowledge and skills at home through self-directed lessons that challenge, inspire, and engage young learners and adults alike. Our user-friendly platform and guided lessons are designed to be used by anyone at any skill level, whether you have experience with programming or robotics, or not. We believe everyone has the ability to become the next great inventor! Cubit makes it easy—and FUN—to understand and master STEAM concepts.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Closed"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "e-TAGs",
+	"short_title": "e-TAGs",
+	"image": "/toolkits/media/photos/27.png",
+	"url": "https://vtechworks.lib.vt.edu/handle/10919/80538",
+	"notes": "The integration of wires and electronics into textiles (e-textiles) has many potential applications for wearable and pervasive computing. Textiles are an integral part of everyday life, from clothing we wear to the carpet we walk upon. Being able to combine electronics with textiles would enable pervasive computing to blend into the background so that the user can go about a normal routine. One of the challenges in e-textile implementation is connecting the electronic components to the fabric cheaply and reliably. This paper describes the design and implementation issues of e-Textile Attached Gadgets (e-TAGs). E-TAGs can use a variety of methods to connect to wires in an etextile. This design allows for e-textile electronics modules that are easily attachable, removable, replaceable, and interchangeable. This paper presents the system architecture, connection techniques, communication alternatives, and experiences from the construction of a prototype wearable e-textile with multiple e-TAGs.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Wearables / textiles"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["No"],
+		"Open source": ["Partial"]
+	}
+}

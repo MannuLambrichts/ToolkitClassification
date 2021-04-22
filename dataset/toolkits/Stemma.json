@@ -1,0 +1,27 @@
+{
+	"title": "Adafruit Stemma",
+	"short_title": "Stemma",
+	"image": "/toolkits/media/photos/92.jpg",
+	"url": "https://learn.adafruit.com/introducing-adafruit-stemma-qt",
+	"notes": "You may have noticed that starting in 2018, a lot of Adafruit development boards have connectors that look like this:
+
+We call these STEMMA connectors - technically they are called 3 and 4 pin JST PH connectors. They're our way of making it easy to plug-n-play various sensors and devices without a lot of wiring. Especially when the board isn't breadboard-friendly, as above.
+
+The idea is that by having easy-to-plug cables, you can wire up things without soldering, wiring and complexity. For example, here's a STEMMA soil sensor.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2b"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["N/A"],
+		"Dependencies for programming": ["N/A"],
+		"Dependency during deployment": ["N/A"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

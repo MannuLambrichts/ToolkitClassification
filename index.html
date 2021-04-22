@@ -167,10 +167,8 @@ toolkits = {
 }
 */
         
-        $.getJSON("dataset/dataset.json", function(dataset) {  
-            // build the header of the table   
-            categories = dataset["CATEGORIES"];
-        
+        $.getJSON("dataset/categories.json", function(categories) {  
+            // build the header of the table          
             for (const group in categories) {
                 var i = 0;
                 for (const category in categories[group]) {
@@ -180,39 +178,43 @@ toolkits = {
                 $('#column_group').append('<th class="text-center sorter-false columnSelector-disable" colspan="' + i + '">' + group + '</th>');
             }
         
+        });
 
+        $.getJSON("dataset/toolkits.json", function(toolkit_files) {  
 
             // build the table
-            toolkits = dataset["TOOLKITS"];
-
             var i = 0;
-            for (const toolkit in toolkits) {
+            for (const file in toolkit_files) {
 
-                var row = '<tr>';
-                row += '<th>' + (++i) + '</th>';
-                row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkit + '</a></td>';
-                row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
-                row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+                $.getJSON(toolkit_files[file], function(toolkit) {
 
-                // loop through each category and if it is provided for the current toolkit fill in the table
-                for (const group in categories) {
-                    for (const category in categories[group]) {
-                        row += '<td>';
-                        // check if the category is provided for the toolkit
-                        if (category in toolkits[toolkit]['labels']) {                        
-                            for (const value of toolkits[toolkit]['labels'][category]) {
-                                // check if the value that is provided exists
-                                if (value in categories[group][category]) {
-                                    row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
-                                }                            
-                            }                        
+                    var row = '<tr>';
+                    row += '<th>' + (++i) + '</th>';
+                    row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkit + '</a></td>';
+                    row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
+                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+
+                    // loop through each category and if it is provided for the current toolkit fill in the table
+                    for (const group in categories) {
+                        for (const category in categories[group]) {
+                            row += '<td>';
+                            // check if the category is provided for the toolkit
+                            if (category in toolkits[toolkit]['labels']) {                        
+                                for (const value of toolkits[toolkit]['labels'][category]) {
+                                    // check if the value that is provided exists
+                                    if (value in categories[group][category]) {
+                                        row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
+                                    }                            
+                                }                        
+                            }
+                            row += '</td>';
                         }
-                        row += '</td>';
                     }
-                }
 
-                row += '</tr>';
-                $('#toolkits').append(row);
+                    row += '</tr>';
+                    $('#toolkits').append(row);
+                });
+
             }
 
             // table sorter

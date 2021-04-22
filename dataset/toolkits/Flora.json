@@ -1,0 +1,23 @@
+{
+	"title": "Adafruit Flora",
+	"short_title": "Flora",
+	"image": "/toolkits/media/photos/103.jpg",
+	"url": "https://www.adafruit.com/product/659",
+	"notes": "FLORA is Adafruit's fully-featured wearable electronics platform. It's a round, sewable, Arduino-compatible microcontroller designed to empower amazing wearables projects.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Wearables / textiles"],
+		"Promoted with user groups": ["K-12 Education", "Makers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Alligator clips"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

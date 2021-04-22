@@ -1,0 +1,23 @@
+{
+	"title": "Bloctopus",
+	"short_title": "Blocktopus",
+	"image": "/toolkits/media/photos/12.jpg",
+	"url": "https://dl.acm.org/doi/abs/10.1145/2677199.2680581",
+	"notes": "Tangible prototyping enables designers to rapidly iterate design concepts, gather feedback, and learn quickly from mistakes. However, when a higher level of functionality is needed with sensors, novices struggle with technical implementation. Existing novice electronics toolkits, such as Arduino, have lowered the threshold to electronic experimentation, but still require manual creation of circuits and software programming ability. We present Bloctopus, a modular electronic prototyping toolkit that allows direct electrical interfacing over USB, and physical interfacing with LEGO blocks. We present the stand-alone sensor model, where each module can directly interface with either a computer or microcontroller, using musical message passing over MIDI. We show that the modules can be programmed with a simplified data flow model in a web-based visual programming interface. Finally, we present a prototyping case study that demonstrates the expressivity of devices that can be created using LEGO pieces, combined with functional electronic modules.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["No"],
+		"Open source": ["Partial"]
+	}
+}

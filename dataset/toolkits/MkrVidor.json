@@ -1,0 +1,23 @@
+{
+	"title": "Arduino MKR Vidor 4000",
+	"short_title": "MKR Vidor",
+	"image": "/toolkits/media/photos/a2bd8995544e487ab0f80950202c2cdb.jpg",
+	"url": "https://store.arduino.cc/arduino-mkr-vidor-4000",
+	"notes": "Bring the power of FPGAs to your embedded projects.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

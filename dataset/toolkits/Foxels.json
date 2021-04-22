@@ -1,0 +1,23 @@
+{
+	"title": "Foxels",
+	"short_title": "Foxels",
+	"image": "/toolkits/media/photos/30.jpg",
+	"url": "https://dl.acm.org/doi/10.1145/3374920.3374935",
+	"notes": "Introducing interactive components into furniture has proven difficult due to the different lifespans of furniture and digital devices. We present Foxels, a modular, smart furniture concept that allows users to create their own interactive furniture on demand by simply snapping together individual building blocks. The modular design makes the system flexible to accommodate a variety of interactive furniture setups, making it particularly well-suited for re-configurable spaces. Considering the trade-off between ease-of-use and high versatility, we explored a number of interaction methods that can be applied to modular interactive furniture, thereby extending the well-known tangible programming paradigm. After explaining our implementation, we demonstrate the validity of the proposed concepts by presenting how Foxels can be used in an ideation workshop along with many additional real-world examples.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Home automation"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Magnetic"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Physical configuration", "Software code"],
+		"Dependencies for programming": ["Wireless programming", "Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["No"],
+		"Open source": ["Partial"]
+	}
+}

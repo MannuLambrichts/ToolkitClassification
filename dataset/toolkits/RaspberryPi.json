@@ -1,0 +1,23 @@
+{
+	"title": "Raspberry Pi",
+	"short_title": "Raspberry Pi",
+	"image": "/toolkits/media/photos/df030eca39d24b5e9c856243c67d63b6.jpg",
+	"url": "https://www.raspberrypi.org/",
+	"notes": "",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a", "Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education", "Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors", "Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer", "Wireless programming", "Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["In commercial products"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

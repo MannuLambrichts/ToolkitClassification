@@ -1,0 +1,23 @@
+{
+	"title": "The Calder toolkit",
+	"short_title": "Calder toolkit",
+	"image": "/toolkits/media/photos/63.png",
+	"url": "https://dl.acm.org/doi/10.1145/1013115.1013139",
+	"notes": "Toolkits and other tools have dramatically reduced the time and technical expertise needed to design and implement graphical user interfaces (GUIs) allowing high-quality, iterative, user-centered design to become a common practice. Unfortunately the generation of functioning prototypes for physical interactive devices as not had similar support -- it still requires substantial time and effort by individuals with highly specialized skills and tools. This creates a divide between a designers' ability to explore form and interactivity of product designs and the ability to iterate on the basis of high fidelity interactive experiences with a functioning prototype. To help overcome this difficulty we have developed the Calder hardware toolkit. Calder is a development environment for rapidly exploring and prototyping functional physical interactive devices. Calder provides a set of reusable small input and output components, and integration into existing interface prototyping environments. These components communicate with a computer using wired and wireless connections. Calder is a tool targeted toward product and interaction designers to aid them in their early design process. In this paper we describe the process of gaining an understanding of the needs and workflow habits of our target users to generate a collection of requirements for such a toolkit. We describe technical challenges imposed by these needs, and the specifics of design and implementation of the toolkit to meet these challenges.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Multi-wire cables", "Wireless"],
+		"Connection mechanism": ["Friction fit", "Wireless"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer", "Wireless programming"],
+		"Dependency during deployment": ["Always tethered", "Wireless server needed"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["No"],
+		"Open source": ["Partial"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "MakerWear",
+	"short_title": "MakerWear",
+	"image": "/toolkits/media/photos/40_LcrGof7.jpg",
+	"url": "https://dl.acm.org/doi/10.1145/3025453.3025887",
+	"notes": "Wearable construction toolkits have shown promise in broadening participation in computing and empowering users to create personally meaningful computational designs. However, these kits present a high barrier of entry for some users, particularly young children (K-6). In this paper, we introduce MakerWear, a new wearable construction kit for children that uses a tangible, modular approach to wearable creation. We describe our participatory design process, the iterative development of MakerWear, and results from single- and multi-session workshops with 32 children (ages 5-12; M=8.3 years). Our findings reveal how children engage in wearable design, what they make (and want to make), and what challenges they face. As a secondary analysis, we also explore age-related differences.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Wearables / textiles"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Magnetic"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Physical configuration"],
+		"Dependencies for programming": ["Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

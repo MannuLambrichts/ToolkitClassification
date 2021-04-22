@@ -1,0 +1,23 @@
+{
+	"title": "Generic breakout boards",
+	"short_title": "Breakout boards",
+	"image": "/toolkits/media/photos/ce237aaf026b4c55bed1ef0e23bc9518.jpg",
+	"url": "https://www.adafruit.com/category/42",
+	"notes": "",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2b"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["N/A"],
+		"Dependencies for programming": ["N/A"],
+		"Dependency during deployment": ["N/A"],
+		"Existing use": ["Multiple copies"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

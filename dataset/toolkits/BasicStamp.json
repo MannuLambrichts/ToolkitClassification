@@ -1,0 +1,27 @@
+{
+	"title": "BASIC Stamp",
+	"short_title": "BASIC Stamp",
+	"image": "/toolkits/media/photos/b5e0071a00de419795705110ba5b14d7.jpg",
+	"url": "https://www.parallax.com/catalog/microcontrollers/basic-stamp",
+	"notes": "The BASIC Stamp 2 serves as the brains inside of electronics projects and applications that require a programmable microcontroller.  It is able to control and monitor timers, keypads, motors, sensors, switches, relays, lights, and more. Programming is performed in an easy-to-learn language called PBASIC, which is detailed in the starter kits that include the BASIC Stamp 2; the BASIC Stamp Activity Kit (#90005) and the BASIC Stamp Discovery Kit (#27207).
+
+It's amazing what you can accomplish with this proven microcontroller and its simple PBASIC 2 language.  All vital components (processor, clock source, memory, power regulator) are provided on the BS2's tiny PCB; just connect power and go!  Projects needing small, permanent soldering area for circuitry may benefit from combining the BS2-IC with the BASIC Stamp 2 Carrier Board (#27120) or the Super Carrier Board (#27130).  For lower-cost OEM solutions, the processor (PBASIC2 interpreter) and other components are available for integration into your PCB.
+
+The BS2-IC is widely used in educational, hobby, and industrial applications and is strongly recommended for first-time BASIC Stamp users because of plentiful resources (documentation, source code, and customer projects) that are available online and in print. Our Stamps in Class Educational Program was designed with this module, making it a great place to learn about microcontrollers. Once you have become familiar with programming in PBASIC and have designed your own projects, you may want to explore our selection of BASIC Stamps with increased power, speed, or memory.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education", "Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

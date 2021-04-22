@@ -1,0 +1,23 @@
+{
+	"title": "A construction kit for electronic textiles",
+	"short_title": "e-textile construction kit",
+	"image": "/toolkits/media/photos/13.png",
+	"url": "https://ieeexplore.ieee.org/document/4067731",
+	"notes": "Construction kits have long been popular as educational artifacts, supporting and encouraging creative explorations of engineering and design; but to date, such kits have had little connection with the new and expanding field of electronic textiles (e-textiles). We believe that creating an "e-textile construction kit" could provide a powerful new medium to engage a diverse range of students in electrical engineering and computer science. This paper, then, describes a construction kit designed to introduce novices to electronics, computing and design via e-textiles. We describe each component of the kit, provide examples of constructions that were built with the kit, and examine the durability of these constructions. We conclude with a discussion of the results of preliminary user testing and an exploration of our plans for continued work in this area.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Wearables / textiles"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Thread"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

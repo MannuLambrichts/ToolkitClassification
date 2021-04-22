@@ -1,0 +1,27 @@
+{
+	"title": "Grove",
+	"short_title": "Grove",
+	"image": "/toolkits/media/photos/33.jpg",
+	"url": "https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html",
+	"notes": "As an open-source hardware facilitator, we dedicate to make electronic prototyping easy and fast, and we believe that more effort should be put on concept design rather than how to build basic circuits especially in the idea phase. That is why we created Grove.
+
+Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds.
+
+This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginners. It includes a Base Shield which has many Grove connectors onboard, twelve Grove modules that cover most functions needed by a beginner and a very helpful user manual that can help get started quickly.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2b"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["N/A"],
+		"Dependencies for programming": ["N/A"],
+		"Dependency during deployment": ["N/A"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

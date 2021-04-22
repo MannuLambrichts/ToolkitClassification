@@ -1,0 +1,23 @@
+{
+	"title": "FPGA dev. boards (e.g. Adruino Vidor MKR 4000)",
+	"short_title": "FPGA dev. boards",
+	"image": "/toolkits/media/photos/151.jpg",
+	"url": "https://store.arduino.cc/arduino-mkr-vidor-4000",
+	"notes": "",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "i*CATch",
+	"short_title": "i*CATch",
+	"image": "/toolkits/media/photos/36_XGEVJYw.jpg",
+	"url": "https://dl.acm.org/doi/10.1145/2483710.2483712",
+	"notes": "This article presents the design and development of i*CATch, a construction kit for physical and wearable computing that was designed to be scalable, plug-and-play, and to provide support for iterative and exploratory learning. It consists of a standardized construction interface that can be adapted for a wide range of soft textiles or electronic boards, a set of functional components, and an easy-to-use hybrid text-graphical integrated development environment. The objective was to design an easily usable, manufacturable and extensible construction kit that can be used in a wide range of teaching tasks for a wide variety of student demographic profiles. We present detailed specifications of our construction kit and explain some of the major design decisions. Experiences in using the kit in multiple teaching environments, ranging from elementary school to postgraduate, demonstrate that the design objectives have been achieved.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Wearables / textiles"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "Low-cost WiFi modules (e.g. ESP32, ESP8266)",
+	"short_title": "Low-cost WiFi modules",
+	"image": "/toolkits/media/photos/144.jpg",
+	"url": "https://www.espressif.com/en/products/modules",
+	"notes": "",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["In commercial products"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

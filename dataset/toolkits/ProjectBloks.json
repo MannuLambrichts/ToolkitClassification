@@ -1,0 +1,23 @@
+{
+	"title": "Project Bloks",
+	"short_title": "Project Bloks",
+	"image": "/toolkits/media/photos/72.jpg",
+	"url": "https://www.startup-buzz.com/googles-project-bloks-makes-coding-fun-kids/",
+	"notes": "Google has come up with Project Bloks- a physical block building exercise that helps kids in learning coding. Big companies are investing in developing talent base by introducing kids to coding at early stage so that they can develop a flair for it. Apple also recently launched Swift Playgrounds- an app designed to teach coding to kids.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Physical configuration"],
+		"Dependencies for programming": ["Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Closed"]
+	}
+}

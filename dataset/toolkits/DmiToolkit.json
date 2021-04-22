@@ -1,0 +1,23 @@
+{
+	"title": "A Method and Toolkit for Digital Musical Instruments: Generating Ideas and Prototypes",
+	"short_title": "DMI toolkit",
+	"image": "/toolkits/media/photos/125.jpg",
+	"url": "https://www.researchgate.net/publication/313538280_A_Method_and_Toolkit_for_Digital_Musical_Instruments_Generating_Ideas_and_Prototypes",
+	"notes": "Digital musical instruments (DMIs) make up a class of devices in which gestural control and sound production are physically decoupled, but digitally mapped. This work discusses aspects of DMI design by focusing on the complexity of the design space and the importance of prototyping cycles. The authors' research questions cover how to provide an initial path for generating DMI ideas and how to reduce the time and effort required to build functional DMI prototypes. To address these questions, they propose a new methodology and an associated physical prototyping toolkit, which has building blocks inspired by of existing instruments. Preliminary tests with musicians and DMI designers revealed a strong potential for its use in the development of DMIs, and also uncovered limitations of the current toolkit. This article is part of a special issue on multimedia technologies for enriched music.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Musical instruments"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Always tethered"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "PushPin",
+	"short_title": "Pushpin Computing",
+	"image": "/toolkits/media/photos/53.jpg",
+	"url": "https://www.researchgate.net/publication/225134541_Pushpin_Computing_System_Overview_A_Platform_for_Distributed_Embedded_Ubiquitous_Sensor_Networks",
+	"notes": "A hardware and software platform has been designed and implemented for modeling, testing, and deploying distributed peer-to-peer sensor networks comprised of many identical nodes. Each node possesses the tangible affordances of a commonplace pushpin to meet ease-of-use and power considerations. The sensing, computational, and communication abilities of a “Pushpin”, as well as a “Pushpin” operating system supporting mobile computational processes are treated in detail. Example applications and future work are discussed.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers"],
+		"Type of connection": ["Multi-wire cables"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["No"],
+		"Open source": ["Partial"]
+	}
+}

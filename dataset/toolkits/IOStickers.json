@@ -1,0 +1,23 @@
+{
+	"title": "Sticking Together",
+	"short_title": "I/O Stickers",
+	"image": "/toolkits/media/photos/62.png",
+	"url": "https://dl.acm.org/doi/abs/10.1145/1999030.1999071",
+	"notes": "We present I/O Stickers, adhesive sensors and actuators that children can use to handcraft personalized remote communication interfaces. By attaching I/O Stickers to special wirelessly connected greeting cards, children can invent ways to communicate with long-distance loved ones. Children decorate these cards with their choice of craft materials, creatively expressing themselves while making a functioning interface. The low-bandwidth connections -- simple actuators that change as the sensor stickers are manipulated -- leave room not only to design the look and function of the card, but also to decide how to interpret the information transmitted. We aim to empower children to implement ideas that would otherwise require advanced electronics knowledge. In addition, we hope to support creative learning about communication and to make keeping in touch playful and meaningful. In this paper, we describe the design of the I/O Stickers, analyze a variety of artifacts children have created, and explore future directions for the toolkit.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Interactive paper"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Adhesive"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Physical configuration"],
+		"Dependencies for programming": ["Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Never"],
+		"Third party use": ["Yes"],
+		"Open source": ["Partial"]
+	}
+}

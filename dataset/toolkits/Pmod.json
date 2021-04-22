@@ -1,0 +1,27 @@
+{
+	"title": "Pmod",
+	"short_title": "Pmod",
+	"image": "/toolkits/media/photos/50_Gf6O3FK.png",
+	"url": "https://store.digilentinc.com/pmod-modules-connectors/",
+	"notes": "Pmod™ devices are Digilent’s line of small I/O interface boards that offer an ideal way to extend the capabilities of programmable logic and embedded control boards. They allow sensitive signal conditioning circuits and high-power drive circuits to be placed where they are most effective - near sensors and actuators.
+
+Pmod modules communicate with system boards using 6, 8, or 12-pin connectors that can carry multiple digital control signals, including SPI and other serial protocols. Pmod modules allow for more effective designs by routing analog signals and power supplies only where they are needed, and away from digital controller boards.
+
+Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod standard lays out guidelines for form factor, communication protocols and access to a target audience through reference manuals, code examples, user guides, and technical support.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2b"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["N/A"],
+		"Dependencies for programming": ["N/A"],
+		"Dependency during deployment": ["N/A"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"title": "SamLabs",
+	"short_title": "SAM Labs modules",
+	"image": "/toolkits/media/photos/57.jpg",
+	"url": "https://samlabs.com/us/",
+	"notes": "Inspiring a generation of problem-solvers through STEM, STEAM and Coding courses
+Equipping educators with the tools, know-how, and mindset to reach learners’ potential for computational thinking",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Wireless"],
+		"Connection mechanism": ["Wireless"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wireless programming"],
+		"Dependency during deployment": ["Wireless server needed"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Closed"]
+	}
+}

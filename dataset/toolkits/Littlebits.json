@@ -1,0 +1,24 @@
+{
+	"title": "LittleBits",
+	"short_title": "littleBits",
+	"image": "/toolkits/media/photos/7.jpg",
+	"url": "https://littlebits.com/",
+	"notes": "littleBits is a hands-on learning system of electronic building blocks that allows students of all ages to create with technology.
+Our snap-together Bits are easy to use and simple to understand, no prior experience required.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Direct module-to-module"],
+		"Connection mechanism": ["Magnetic"],
+		"Connection topology": ["Bus"],
+		"Programming style": ["Physical configuration"],
+		"Dependencies for programming": ["Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Closed"]
+	}
+}

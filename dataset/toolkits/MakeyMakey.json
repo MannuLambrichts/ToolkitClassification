@@ -1,0 +1,23 @@
+{
+	"title": "Makey Makey",
+	"short_title": "Makey Makey",
+	"image": "/toolkits/media/photos/41.jpg",
+	"url": "https://dl.acm.org/doi/10.1145/2148131.2148219",
+	"notes": "Makey Makey is a new platform for improvising tangible user interfaces. It enables people to make nature-based interfaces, it is compatible with all software, and it does not require the user to program or to assemble electronics. It is designed for a wide range of audiences, supporting ideation for experts and access for beginners. In the studio, participants will rapidly create several different user interfaces incorporating a wide variety of found objects, both physical and digital. There will also be opportunities to test out the newly created interfaces with each other, and reflect on the design of UI prototyping toolkits.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["K-12 Education"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Alligator clips"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Physical configuration"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Always tethered"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"title": "Silicon vendor dev. boards (e.g. TI launchpad)",
+	"short_title": "Silicon vendor dev. boards",
+	"image": "/toolkits/media/photos/109.jpg",
+	"url": "http://www.ti.com/design-resources/embedded-development/hardware-kits-boards.html",
+	"notes": "Get started with microcontroller (MCU) LaunchPad™ Development Kits from Texas Instruments. Choose from a variety of low-cost kits and BoosterPack plug-in modules. Scalable software tools provide multiple points of entry for programming your LaunchPad kit.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a", "Type 3"],
+		"Electronic sub-domain": ["Generic electronic systems"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors", "Direct module-to-module"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Hybrid star/bus"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}

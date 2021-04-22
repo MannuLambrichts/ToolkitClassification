@@ -1,0 +1,23 @@
+{
+	"title": "Google Coral",
+	"short_title": "Coral",
+	"image": "/toolkits/media/photos/148.jpg",
+	"url": "https://coral.ai/",
+	"notes": "Accelerate ML in a form factor best fit for your product. Prototyping devices include a single-board computer and USB accessory; production-ready devices include a system-on-module and PCIe module.",
+	"in_scope": true,
+	"labels": {
+		"Type of electronics": ["Type 2a"],
+		"Electronic sub-domain": ["AI / ML"],
+		"Promoted with user groups": ["Makers", "Professional engineers"],
+		"Type of connection": ["Individual conductors"],
+		"Connection mechanism": ["Friction fit"],
+		"Connection topology": ["Star"],
+		"Programming style": ["Software code"],
+		"Dependencies for programming": ["Wired computer", "Wireless programming", "Fully self-contained"],
+		"Dependency during deployment": ["Fully self-contained"],
+		"Existing use": ["Only used in one-offs"],
+		"Commercially available": ["Yes"],
+		"Third party use": ["Yes"],
+		"Open source": ["Fully"]
+	}
+}
