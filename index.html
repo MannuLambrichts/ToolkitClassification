@@ -191,6 +191,8 @@ toolkits = {
                 console.log(toolkit_files);
 
                 for (const file in toolkit_files) {
+                    console.log("ready: " + ready);
+                    console.log(file);
 
                     $.getJSON(toolkit_files[file], function(toolkit) {
 
