@@ -38,7 +38,7 @@
             "Adhesive": {"color": "#ffff0f"},
             "Thread": {"color": "#fffff0"},
             "Magnetic": {"background": "#fff0ff"},
-            "Wireless": {"color": "#ffff0f"},
+            "Wireless": {"color": "#ffff0f"}
         },
         "Connection topology": {
             "Star": {"color": "#fff0ff"},
@@ -79,7 +79,7 @@
         },
         "Third party use": {
             "Yes": {"color": "#fff0ff"},
-            "No": {"color": "#ffff0f"},
+            "No": {"color": "#ffff0f"}
         },
         "Open source": {
             "Fully": {"color": "#fff0ff"},
