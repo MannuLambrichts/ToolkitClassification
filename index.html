@@ -188,6 +188,7 @@ toolkits = {
 
                 var ready = 0; // toolkits that are ready
                 var total = Object.keys(toolkit_files).length; // number of toolkits that need to be loaded
+                console.log(total);
 
                 for (const file in toolkit_files) {
 
@@ -197,7 +198,7 @@ toolkits = {
                         row += '<th>' + (++i) + '</th>';
                         row += '<td><a href="' + toolkit['url'] + '" target="_blank">' + toolkit['title'] + '</a></td>';
                         row += '<td class="font-italic">' + toolkit['short_title'] + '</td>';
-                        row += '<td>' + (toolkit['image'] === "" ? '' : '<img src="' + toolkit['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+                        row += '<td>' + (toolkit['image'] !== "" ? '' : '<img src="' + toolkit['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
 
                         // loop through each category and if it is provided for the current toolkit fill in the table
                         for (const group in categories) {
@@ -220,7 +221,7 @@ toolkits = {
                         $('#toolkits').append(row);
 
                         ready++;
-
+                        console.log(ready);
                         // we processed the last toolkit so we can enable the sorting
                         if (ready == total) {
                             // table sorter
