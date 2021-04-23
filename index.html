@@ -191,7 +191,7 @@ toolkits = {
                     row += '<th>' + (++i) + '</th>';
                     row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
                     row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
-                    row += '<td>' + (toolkits[toolkit]['image'] !== "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
 
                     // loop through each category and if it is provided for the current toolkit fill in the table
                     for (const group in categories) {
@@ -204,14 +204,13 @@ toolkits = {
                                     if (value in categories[group][category]) {
                                         row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
                                     }  else {
-                                        console.log("Value not found: " + value + " - " + categories[group][category]);
-                                        
+                                        // debug code that detects if there is a typo somewhere
+                                        console.log("Value not found: " + value + " - " + categories[group][category]);                                        
                                         console.log(group);
                                         console.log(category);
                                         console.log(categories);
                                         console.log(categories[group]);
-                                        console.log("----------");
-                                        
+                                        console.log("----------");                                        
                                     }                          
                                 }                        
                             }
