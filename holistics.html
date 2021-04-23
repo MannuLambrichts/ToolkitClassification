@@ -67,7 +67,7 @@
     <script>
 
 /*
-        dataset = {
+        dataset_toolkits = {
             ".NET Gadgeteer": {
                 "title": ".NET Gadgeteer",
                 "short_title": "Gadgeteer",
@@ -169,7 +169,7 @@
             }
         }
 
-        holistics = {
+        dataset_holistics = {
             "Expertise in electronics": {
                 "Type of connection": {
                     "Individual conductors": 0.00,
@@ -368,7 +368,7 @@
                 column += '<div class="col-md-12 col-sm-12 d-flex">';
                     column += '<div class="card m-2 w-100">';
                         column += '<div class="card-body">';
-                            column += '<a class="h6" data-toggle="collapse" href="#collapse' + hash(holistic) + '" role="button" aria-expanded="false" aria-controls="collapseExample">' + holistic + '</a>';
+                            column += '<a class="h6" data-toggle="collapse" href="#collapse' + hash(holistic) + '" role="button" aria-expanded="false" aria-controls="collapseExample">' + holistic + '<span class="glyphicon glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>';
                             //column += '<h5 class="card-title">' + holistic + '</h5>';
                             column += '<div id="collapse' + hash(holistic) + '" class="collapse">';
                             for (category in holistics[holistic]) {
