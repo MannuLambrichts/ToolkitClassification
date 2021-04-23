@@ -5,7 +5,7 @@
             "Type 2b": {"background": "#f0ffff"},
             "Type 3": {"background": "#ff0fff"}
         },
-        "Electronic subdomain": {
+        "Electronic sub-domain": {
             "Generic electronic systems": {"background": "#fff0ff"},
             "Home automation": {"background": "#ffff0f"},
             "Wearables / textiles": {"background": "#fffff0"},
