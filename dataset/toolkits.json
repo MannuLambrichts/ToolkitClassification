@@ -36,6 +36,7 @@
 	"Makey Makey": "dataset/toolkits/Makey Makey.json", 
 	"Mbed": "dataset/toolkits/Mbed.json", 
 	"mBot": "dataset/toolkits/Mbot.json", 
+	"microbit": "dataset/toolkits/MicroBit.json", 
 	"Neuron": "dataset/toolkits/Neuron.json", 
 	"Particle": "dataset/toolkits/Particle.json", 
 	"Phidgets": "dataset/toolkits/Phidgets.json", 
