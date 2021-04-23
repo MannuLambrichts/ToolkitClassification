@@ -204,7 +204,9 @@ toolkits = {
                                     // check if the value that is provided exists
                                     if (value in categories[group][category]) {
                                         row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
-                                    }                            
+                                    }  else {
+                                        console.log("Value not found: " + value + " - " + categories[group][category]);
+                                    }                          
                                 }                        
                             }
                             row += '</td>';
