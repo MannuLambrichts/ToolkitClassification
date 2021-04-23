@@ -20,7 +20,7 @@
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"A construction kit for electronic textiles": {
@@ -44,7 +44,7 @@
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"A Method and Toolkit for Digital Musical Instruments Generating Ideas and Prototypes": {
@@ -68,7 +68,7 @@
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Adafruit Circuit Playground": {
@@ -94,7 +94,7 @@ Circuit Playground features an ATmega32u4 micro-processor, just like our popular
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Adafruit Feather": {
@@ -120,7 +120,7 @@ We also carry a complete line of accessories and Feather Wings to stack boards a
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Adafruit Flora": {
@@ -144,7 +144,7 @@ We also carry a complete line of accessories and Feather Wings to stack boards a
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Adafruit Gemma": {
@@ -168,7 +168,7 @@ We also carry a complete line of accessories and Feather Wings to stack boards a
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Adafruit Stemma": {
@@ -196,7 +196,7 @@ The idea is that by having easy-to-plug cables, you can wire up things without s
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Arduino Lilypad": {
@@ -220,7 +220,7 @@ The idea is that by having easy-to-plug cables, you can wire up things without s
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Arduino MKR Vidor 4000": {
@@ -244,7 +244,7 @@ The idea is that by having easy-to-plug cables, you can wire up things without s
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Arduino Uno": {
@@ -268,7 +268,7 @@ The idea is that by having easy-to-plug cables, you can wire up things without s
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"BASIC Stamp": {
@@ -296,7 +296,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"BeagleBoard": {
@@ -320,7 +320,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"BITalino (r)evolution / Biosignals for everyone": {
@@ -344,7 +344,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Bloctopus": {
@@ -368,7 +368,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Circuit stickers": {
@@ -392,7 +392,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Click Boards": {
@@ -416,7 +416,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Cubit": {
@@ -442,7 +442,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Data Flow": {
@@ -466,7 +466,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"dTools": {
@@ -490,7 +490,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"e-TAGs": {
@@ -514,7 +514,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Electronic blocks": {
@@ -538,7 +538,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"ESLOV": {
@@ -562,7 +562,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Foxels": {
@@ -586,7 +586,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"FPGA dev. boards (e.g. Adruino Vidor MKR 4000)": {
@@ -610,7 +610,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Generic breakout boards": {
@@ -634,7 +634,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Google Coral": {
@@ -658,7 +658,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Grove": {
@@ -686,7 +686,7 @@ This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginn
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"i*CATch": {
@@ -710,7 +710,7 @@ This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginn
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Lego Mindstorms": {
@@ -734,7 +734,7 @@ This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginn
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"LittleBits": {
@@ -759,7 +759,7 @@ Our snap-together Bits are easy to use and simple to understand, no prior experi
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Low-cost WiFi modules (e.g. ESP32, ESP8266)": {
@@ -783,7 +783,7 @@ Our snap-together Bits are easy to use and simple to understand, no prior experi
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"M5Stack Core2": {
@@ -815,7 +815,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"MakerWear": {
@@ -839,7 +839,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Makey Makey": {
@@ -863,7 +863,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Mbed": {
@@ -887,7 +887,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"mBot (from Makeblock)": {
@@ -911,7 +911,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"microbit": {
@@ -939,7 +939,7 @@ Two modes of use (a) with 3rd party accessories that the microbit plugs into (on
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Neuron (from Makeblock)": {
@@ -963,7 +963,7 @@ Two modes of use (a) with 3rd party accessories that the microbit plugs into (on
 			"Commercially available": ["No longer"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Particle": {
@@ -989,7 +989,7 @@ The Argon is great for connecting projects to the Particle Device Cloud or as a 
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Phidgets": {
@@ -1015,7 +1015,7 @@ The advantage of using Phidgets is that all Phidgets can be plugged in and used 
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Pin&Play": {
@@ -1039,7 +1039,7 @@ The advantage of using Phidgets is that all Phidgets can be plugged in and used 
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Pine": {
@@ -1071,7 +1071,7 @@ Apart from Linux, you also have a choice of a selection of *BSDs, Android, Remix
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Pmod": {
@@ -1099,7 +1099,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Printoo": {
@@ -1123,7 +1123,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Project Bloks": {
@@ -1147,7 +1147,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Propeller": {
@@ -1171,7 +1171,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"PushPin": {
@@ -1195,7 +1195,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Quilt Snaps": {
@@ -1219,7 +1219,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Raspberry Pi": {
@@ -1243,7 +1243,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"Raspberry Pi Pico": {
@@ -1268,7 +1268,7 @@ Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a bra
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"roBlocks / Cubelets": {
@@ -1294,7 +1294,7 @@ Cubelets are the only toy that uses Tactile Coding to help builders of nearly an
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"SamLabs": {
@@ -1319,7 +1319,7 @@ Equipping educators with the tools, know-how, and mindset to reach learners’ p
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Closed"]
-		},
+		}
 	},
 
 	"Silicon vendor dev. boards (e.g. TI launchpad)": {
@@ -1343,7 +1343,7 @@ Equipping educators with the tools, know-how, and mindset to reach learners’ p
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"SoftMod": {
@@ -1367,7 +1367,7 @@ Equipping educators with the tools, know-how, and mindset to reach learners’ p
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"SparkFun Qwiic": {
@@ -1392,7 +1392,7 @@ SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface d
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"Sticking Together": {
@@ -1416,7 +1416,7 @@ SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface d
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"The Calder toolkit": {
@@ -1440,7 +1440,7 @@ SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface d
 			"Commercially available": ["Never"],
 			"Third party use": ["No"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 	"TinkerForge": {
@@ -1464,7 +1464,7 @@ SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface d
 			"Commercially available": ["Yes"],
 			"Third party use": ["Yes"],
 			"Open source": ["Fully"]
-		},
+		}
 	},
 
 	"VoodooIO": {
@@ -1488,7 +1488,7 @@ SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface d
 			"Commercially available": ["Never"],
 			"Third party use": ["Yes"],
 			"Open source": ["Partial"]
-		},
+		}
 	},
 
 
