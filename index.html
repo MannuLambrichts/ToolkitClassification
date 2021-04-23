@@ -191,7 +191,7 @@ toolkits = {
                     row += '<th>' + (++i) + '</th>';
                     row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
                     row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
-                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['thumbnail'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
 
                     // loop through each category and if it is provided for the current toolkit fill in the table
                     for (const group in categories) {
