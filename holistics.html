@@ -360,53 +360,53 @@
 
 
 
+        function buildUserInput() {
+            for (holistic in holistics) {
 
-
-
-
-        for (holistic in holistics) {
-
-            // parse each holistic category 
-            var column = '';            
-            column += '<div class="col-md-12 col-sm-12 d-flex">';
-                column += '<div class="card m-2 w-100">';
-                    column += '<div class="card-body">';
-                        column += '<a class="h6" data-toggle="collapse" href="#collapse' + hash(holistic) + '" role="button" aria-expanded="false" aria-controls="collapseExample">' + holistic + '</a>';
-                        //column += '<h5 class="card-title">' + holistic + '</h5>';
-                        column += '<div id="collapse' + hash(holistic) + '" class="collapse">';
-                        for (category in holistics[holistic]) {
-                            column += '<h6 class="card-subtitle mb-2 mt-3 text-muted">' + category + '</h6>';   
-                            
-                            // dimension weights
-                            column += '<div class="card-text input-group m-1">';
-                                column += '<div class="input-group-prepend">';
-                                    column += '<span class="input-group-text font-weight-bold">' + category + '</span>';
-                                column += '</div>';
-                                column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category) + '" value="1.0">';
-                            column += '</div>';                         
-                            
-                            // value weights
-                            for (value in holistics[holistic][category]) {
+                // parse each holistic category 
+                var column = '';            
+                column += '<div class="col-md-12 col-sm-12 d-flex">';
+                    column += '<div class="card m-2 w-100">';
+                        column += '<div class="card-body">';
+                            column += '<a class="h6" data-toggle="collapse" href="#collapse' + hash(holistic) + '" role="button" aria-expanded="false" aria-controls="collapseExample">' + holistic + '</a>';
+                            //column += '<h5 class="card-title">' + holistic + '</h5>';
+                            column += '<div id="collapse' + hash(holistic) + '" class="collapse">';
+                            for (category in holistics[holistic]) {
+                                column += '<h6 class="card-subtitle mb-2 mt-3 text-muted">' + category + '</h6>';   
+                                
+                                // dimension weights
                                 column += '<div class="card-text input-group m-1">';
                                     column += '<div class="input-group-prepend">';
-                                        column += '<span class="input-group-text">' + value + '</span>';
+                                        column += '<span class="input-group-text font-weight-bold">' + category + '</span>';
                                     column += '</div>';
-                                    column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category + value) + '" value="' + holistics[holistic][category][value] + '">';
-                                column += '</div>';
-                            }
-                        }    
-                        column += '</div>';           
-                    column += '</div>';
-                column += '</div>';                
-            column += '</div>';
+                                    column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category) + '" value="1.0">';
+                                column += '</div>';                         
+                                
+                                // value weights
+                                for (value in holistics[holistic][category]) {
+                                    column += '<div class="card-text input-group m-1">';
+                                        column += '<div class="input-group-prepend">';
+                                            column += '<span class="input-group-text">' + value + '</span>';
+                                        column += '</div>';
+                                        column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category + value) + '" value="' + holistics[holistic][category][value] + '">';
+                                    column += '</div>';
+                                }
+                            }    
+                            column += '</div>';           
+                        column += '</div>';
+                    column += '</div>';                
+                column += '</div>';
 
-            $('#inputFields').append(column);
+                $('#inputFields').append(column);
+            }
         }
 
         
         // get the holistics
         $.getJSON("dataset/holistics.json", function(dataset_holistics) {  
             holistics = dataset_holistics;
+
+            buildUserInput();
 
             // build the header of the table          
             for (const group in holistics) {
