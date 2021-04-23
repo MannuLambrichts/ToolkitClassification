@@ -76,9 +76,7 @@
 		"short_title": "Circuit Playground",
 		"image": "/toolkits/media/photos/142.jpg",
 		"url": "https://learn.adafruit.com/introducing-circuit-playground/overview",
-		"notes": "Would you like to learn electronics, with an all-in-one board that has sensors and LEDs built in? Circuit Playground is here, and it's the best way to practice programming on real hardware. No soldering or sewing required!
-
-Circuit Playground features an ATmega32u4 micro-processor, just like our popular Flora. It also is round and has alligator-clip pads around it. You can power it from USB, a AAA battery pack, or Lipoly (for advanced users). Program your code into it, then take it on the go.",
+		"notes": "Would you like to learn electronics, with an all-in-one board that has sensors and LEDs built in? Circuit Playground is here, and it's the best way to practice programming on real hardware. No soldering or sewing required! Circuit Playground features an ATmega32u4 micro-processor, just like our popular Flora. It also is round and has alligator-clip pads around it. You can power it from USB, a AAA battery pack, or Lipoly (for advanced users). Program your code into it, then take it on the go.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -102,9 +100,7 @@ Circuit Playground features an ATmega32u4 micro-processor, just like our popular
 		"short_title": "Feather",
 		"image": "/toolkits/media/photos/118.jpg",
 		"url": "https://www.adafruit.com/feather",
-		"notes": "The Adafruit Feather is a complete line of development boards from Adafruit that are both standalone and stackable. They're able to be powered by lipo batteries for on-the-go use or by their micro-USB plugs for stationary projects. Feathers are flexible, portable, and as light as their namesake.
-
-We also carry a complete line of accessories and Feather Wings to stack boards and add room for prototyping. At its core, the Adafruit Feather is a complete ecosystem of products - and the best way to get your project flying.",
+		"notes": "The Adafruit Feather is a complete line of development boards from Adafruit that are both standalone and stackable. They're able to be powered by lipo batteries for on-the-go use or by their micro-USB plugs for stationary projects. Feathers are flexible, portable, and as light as their namesake. We also carry a complete line of accessories and Feather Wings to stack boards and add room for prototyping. At its core, the Adafruit Feather is a complete ecosystem of products - and the best way to get your project flying.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a", "Type 3"],
@@ -176,11 +172,7 @@ We also carry a complete line of accessories and Feather Wings to stack boards a
 		"short_title": "Stemma",
 		"image": "/toolkits/media/photos/92.jpg",
 		"url": "https://learn.adafruit.com/introducing-adafruit-stemma-qt",
-		"notes": "You may have noticed that starting in 2018, a lot of Adafruit development boards have connectors that look like this
-
-We call these STEMMA connectors - technically they are called 3 and 4 pin JST PH connectors. They're our way of making it easy to plug-n-play various sensors and devices without a lot of wiring. Especially when the board isn't breadboard-friendly, as above.
-
-The idea is that by having easy-to-plug cables, you can wire up things without soldering, wiring and complexity. For example, here's a STEMMA soil sensor.",
+		"notes": "You may have noticed that starting in 2018, a lot of Adafruit development boards have connectors that look like this. We call these STEMMA connectors - technically they are called 3 and 4 pin JST PH connectors. They're our way of making it easy to plug-n-play various sensors and devices without a lot of wiring. Especially when the board isn't breadboard-friendly, as above. The idea is that by having easy-to-plug cables, you can wire up things without soldering, wiring and complexity. For example, here's a STEMMA soil sensor.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2b"],
@@ -276,11 +268,7 @@ The idea is that by having easy-to-plug cables, you can wire up things without s
 		"short_title": "BASIC Stamp",
 		"image": "/toolkits/media/photos/b5e0071a00de419795705110ba5b14d7.jpg",
 		"url": "https://www.parallax.com/catalog/microcontrollers/basic-stamp",
-		"notes": "The BASIC Stamp 2 serves as the brains inside of electronics projects and applications that require a programmable microcontroller.  It is able to control and monitor timers, keypads, motors, sensors, switches, relays, lights, and more. Programming is performed in an easy-to-learn language called PBASIC, which is detailed in the starter kits that include the BASIC Stamp 2; the BASIC Stamp Activity Kit (#90005) and the BASIC Stamp Discovery Kit (#27207).
-
-It's amazing what you can accomplish with this proven microcontroller and its simple PBASIC 2 language.  All vital components (processor, clock source, memory, power regulator) are provided on the BS2's tiny PCB; just connect power and go!  Projects needing small, permanent soldering area for circuitry may benefit from combining the BS2-IC with the BASIC Stamp 2 Carrier Board (#27120) or the Super Carrier Board (#27130).  For lower-cost OEM solutions, the processor (PBASIC2 interpreter) and other components are available for integration into your PCB.
-
-The BS2-IC is widely used in educational, hobby, and industrial applications and is strongly recommended for first-time BASIC Stamp users because of plentiful resources (documentation, source code, and customer projects) that are available online and in print. Our Stamps in Class Educational Program was designed with this module, making it a great place to learn about microcontrollers. Once you have become familiar with programming in PBASIC and have designed your own projects, you may want to explore our selection of BASIC Stamps with increased power, speed, or memory.",
+		"notes": "The BASIC Stamp 2 serves as the brains inside of electronics projects and applications that require a programmable microcontroller.  It is able to control and monitor timers, keypads, motors, sensors, switches, relays, lights, and more. Programming is performed in an easy-to-learn language called PBASIC, which is detailed in the starter kits that include the BASIC Stamp 2; the BASIC Stamp Activity Kit (#90005) and the BASIC Stamp Discovery Kit (#27207). It's amazing what you can accomplish with this proven microcontroller and its simple PBASIC 2 language.  All vital components (processor, clock source, memory, power regulator) are provided on the BS2's tiny PCB; just connect power and go!  Projects needing small, permanent soldering area for circuitry may benefit from combining the BS2-IC with the BASIC Stamp 2 Carrier Board (#27120) or the Super Carrier Board (#27130).  For lower-cost OEM solutions, the processor (PBASIC2 interpreter) and other components are available for integration into your PCB. The BS2-IC is widely used in educational, hobby, and industrial applications and is strongly recommended for first-time BASIC Stamp users because of plentiful resources (documentation, source code, and customer projects) that are available online and in print. Our Stamps in Class Educational Program was designed with this module, making it a great place to learn about microcontrollers. Once you have become familiar with programming in PBASIC and have designed your own projects, you may want to explore our selection of BASIC Stamps with increased power, speed, or memory.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -424,9 +412,7 @@ The BS2-IC is widely used in educational, hobby, and industrial applications and
 		"short_title": "Cubit",
 		"image": "/toolkits/media/photos/22.jpg",
 		"url": "https://cubit.cc/",
-		"notes": "Cubit is designed to grow with kids—one Cubit kit and our library of hands-on projects will keep them engaged for years to come.
-
-Cubit’s dynamic learning activities enable students and their families to build science, technology, engineering, arts, and mathematics (STEAM) knowledge and skills at home through self-directed lessons that challenge, inspire, and engage young learners and adults alike. Our user-friendly platform and guided lessons are designed to be used by anyone at any skill level, whether you have experience with programming or robotics, or not. We believe everyone has the ability to become the next great inventor! Cubit makes it easy—and FUN—to understand and master STEAM concepts.",
+		"notes": "Cubit is designed to grow with kids—one Cubit kit and our library of hands-on projects will keep them engaged for years to come. Cubit’s dynamic learning activities enable students and their families to build science, technology, engineering, arts, and mathematics (STEAM) knowledge and skills at home through self-directed lessons that challenge, inspire, and engage young learners and adults alike. Our user-friendly platform and guided lessons are designed to be used by anyone at any skill level, whether you have experience with programming or robotics, or not. We believe everyone has the ability to become the next great inventor! Cubit makes it easy—and FUN—to understand and master STEAM concepts.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 3"],
@@ -666,11 +652,7 @@ Cubit’s dynamic learning activities enable students and their families to buil
 		"short_title": "Grove",
 		"image": "/toolkits/media/photos/33.jpg",
 		"url": "https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html",
-		"notes": "As an open-source hardware facilitator, we dedicate to make electronic prototyping easy and fast, and we believe that more effort should be put on concept design rather than how to build basic circuits especially in the idea phase. That is why we created Grove.
-
-Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds.
-
-This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginners. It includes a Base Shield which has many Grove connectors onboard, twelve Grove modules that cover most functions needed by a beginner and a very helpful user manual that can help get started quickly.",
+		"notes": "As an open-source hardware facilitator, we dedicate to make electronic prototyping easy and fast, and we believe that more effort should be put on concept design rather than how to build basic circuits especially in the idea phase. That is why we created Grove. Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds. This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginners. It includes a Base Shield which has many Grove connectors onboard, twelve Grove modules that cover most functions needed by a beginner and a very helpful user manual that can help get started quickly.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2b"],
@@ -742,8 +724,7 @@ This Grove - Starter Kit for Arduino is a perfect starter kit for Arduino beginn
 		"short_title": "littleBits",
 		"image": "/toolkits/media/photos/7.jpg",
 		"url": "https://littlebits.com/",
-		"notes": "littleBits is a hands-on learning system of electronic building blocks that allows students of all ages to create with technology.
-Our snap-together Bits are easy to use and simple to understand, no prior experience required.",
+		"notes": "littleBits is a hands-on learning system of electronic building blocks that allows students of all ages to create with technology. Our snap-together Bits are easy to use and simple to understand, no prior experience required.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 3"],
@@ -791,15 +772,7 @@ Our snap-together Bits are easy to use and simple to understand, no prior experi
 		"short_title": "M5Stack",
 		"image": "/toolkits/media/photos/0b6a8a33082e4f10ba7d02656fdf829f.jpg",
 		"url": "https://m5stack.com/collections/all/products/m5stack-core2-esp32-iot-development-kit?variant=35960244109476",
-		"notes": "M5Core2 is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores.
-
-The MCU is an ESP32 model D0WDQ6-V3 and has dual core Xtensa® 32-bit 240Mhz LX6 processors that can be controlled separately. WiFi and Bluetooth are supported as standard and it includes an on board 16MB Flash and 8MB PSRAM, USB TYPE-C interface for charging, downloading of programs and serial communication, a 2.0-inch integrated capacitive touch screen, and a built-in vibration motor.
-
-M5Core2 also features a built-in RTC module which can provide accurate timing. The power supply is managed by an AXP192 power management chip, which can effectively control the power consumption of the base and a built-in green LED power indicator helps to notify the user of battery level. The battery capacity has been upgraded to 390mAh, which can power the core for much longer than the previous model.
-
-The M5Core2 retains the SD card slot and speakers. However, in order to ensure higher quality sound output, the I2S digital audio interface power amplifier chip is used to effectively prevent signal distortion. There are independent power and reset buttons on the left side and bottom of the base.
-
-The 3 icons on the front of the screen are capacitive buttons which are programmable. There is a small expansion board on the back of the base with a 6-axis IMU sensor and microphone. The development platform and programming language supported by M5Stack Core2 Arduino, UIFlow (using Blockly, MicroPython language) No matter what level of your development and programming skills, M5Stack will help You gradually turn your ideas into reality.",
+		"notes": "M5Core2 is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores. The MCU is an ESP32 model D0WDQ6-V3 and has dual core Xtensa® 32-bit 240Mhz LX6 processors that can be controlled separately. WiFi and Bluetooth are supported as standard and it includes an on board 16MB Flash and 8MB PSRAM, USB TYPE-C interface for charging, downloading of programs and serial communication, a 2.0-inch integrated capacitive touch screen, and a built-in vibration motor. M5Core2 also features a built-in RTC module which can provide accurate timing. The power supply is managed by an AXP192 power management chip, which can effectively control the power consumption of the base and a built-in green LED power indicator helps to notify the user of battery level. The battery capacity has been upgraded to 390mAh, which can power the core for much longer than the previous model. The M5Core2 retains the SD card slot and speakers. However, in order to ensure higher quality sound output, the I2S digital audio interface power amplifier chip is used to effectively prevent signal distortion. There are independent power and reset buttons on the left side and bottom of the base. The 3 icons on the front of the screen are capacitive buttons which are programmable. There is a small expansion board on the back of the base with a 6-axis IMU sensor and microphone. The development platform and programming language supported by M5Stack Core2 Arduino, UIFlow (using Blockly, MicroPython language) No matter what level of your development and programming skills, M5Stack will help You gradually turn your ideas into reality.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -919,11 +892,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 		"short_title": "microbit",
 		"image": "/toolkits/media/photos/17.jpg",
 		"url": "https://microbit.org/",
-		"notes": "The microbit is a tiny computer that makes coding tangible and promotes digital creativity.
-
-You create a program to tell it what to do using one of the online code editors, and download it to your computer as a .hex file - a version of your program that your microbit can read.
-
-Two modes of use (a) with 3rd party accessories that the microbit plugs into (only one at a time) and (b) with direct wiring to custom circuits either via breakout board or using croc clips.",
+		"notes": "The microbit is a tiny computer that makes coding tangible and promotes digital creativity. You create a program to tell it what to do using one of the online code editors, and download it to your computer as a .hex file - a version of your program that your microbit can read. Two modes of use (a) with 3rd party accessories that the microbit plugs into (only one at a time) and (b) with direct wiring to custom circuits either via breakout board or using croc clips.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -971,9 +940,7 @@ Two modes of use (a) with 3rd party accessories that the microbit plugs into (on
 		"short_title": "Particle",
 		"image": "/toolkits/media/photos/82.jpg",
 		"url": "https://www.particle.io/iot-connectivity/",
-		"notes": "The Argon is a powerful Wi-Fi enabled development board that can act as a standalone Wi-Fi endpoint. It is based on the Nordic nRF52840 and has built-in battery charging circuitry so it’s easy to connect a Li-Po and deploy your local network in minutes.
-
-The Argon is great for connecting projects to the Particle Device Cloud or as a gateway to connect an entire group of local endpoints.  It's everything you love about the Photon, with more features like Bluetooth.",
+		"notes": "The Argon is a powerful Wi-Fi enabled development board that can act as a standalone Wi-Fi endpoint. It is based on the Nordic nRF52840 and has built-in battery charging circuitry so it’s easy to connect a Li-Po and deploy your local network in minutes. The Argon is great for connecting projects to the Particle Device Cloud or as a gateway to connect an entire group of local endpoints.  It's everything you love about the Photon, with more features like Bluetooth.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -997,9 +964,7 @@ The Argon is great for connecting projects to the Particle Device Cloud or as a 
 		"short_title": "Phidgets",
 		"image": "/toolkits/media/photos/47.jpg",
 		"url": "https://dl.acm.org/doi/abs/10.1145/502348.502388",
-		"notes": "At Phidgets, our philosophy is that you don't have to be an electrical engineer in order to create sophisticated projects using motors, sensors and other electronics. You simply need to know how to code.
-Phidgets are building-blocks for sensing and control using a computer, tablet, or phone. Phidgets enable your software application to interact with the physical world.
-The advantage of using Phidgets is that all Phidgets can be plugged in and used in your project out of the box, without having to follow complex pinout diagrams or configure communication between the device and computer. With Phidgets, we deal with the details of getting the electronics behaving as they should, so you can focus on the programming and details of your final product.",
+		"notes": "At Phidgets, our philosophy is that you don't have to be an electrical engineer in order to create sophisticated projects using motors, sensors and other electronics. You simply need to know how to code. Phidgets are building-blocks for sensing and control using a computer, tablet, or phone. Phidgets enable your software application to interact with the physical world. The advantage of using Phidgets is that all Phidgets can be plugged in and used in your project out of the box, without having to follow complex pinout diagrams or configure communication between the device and computer. With Phidgets, we deal with the details of getting the electronics behaving as they should, so you can focus on the programming and details of your final product.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 3"],
@@ -1047,15 +1012,7 @@ The advantage of using Phidgets is that all Phidgets can be plugged in and used 
 		"short_title": "Pine",
 		"image": "/toolkits/media/photos/150.jpg",
 		"url": "https://www.pine64.org/devices/single-board-computers/pine-a64/",
-		"notes": "A Small Form-Factor Single Board Computer Capable of 4K Playback
-----------------------------------------------------------------------------
-ROCK64 is a credit card sized Single Board Computer powered by Rockchip RK3328 Quad-Core ARM Cortex A53 64-Bit Processor and support up to 4GB 1600MHz LPDDR3 memory. It provides an eMMC module socket, MicroSD Card slot, Pi-2 Bus, Pi-P5+ Bus, USB 3.0 and many others peripheral devices interface for makers to integrate with sensors and devices.
-Various Operating Systems are made available by open source community and partner projects including numerous Linux Distributions, Android,  *BSD and many more to come.
-
-PINE A64(+) Our First 64-bit Single Board Computer
----------------------------------------------------------
-This is where our journey began. The PINE A64 (+) is our first Single Board Computer powered by Allwinner’s A64 Quad-Core ARM Cortex A53 64-Bit SOC. There are many Operating Systems available for the PINE A64 (+) created by the open source community and various partner projects. Currently the majority of Linux distributions for the PINE A64 are using mainline Linux but there are a number of BSP-based distribution and / or legacy systems that you can download too.
-Apart from Linux, you also have a choice of a selection of *BSDs, Android, Remix OS and Windows IoT.",
+		"notes": "A Small Form-Factor Single Board Computer Capable of 4K Playback. ROCK64 is a credit card sized Single Board Computer powered by Rockchip RK3328 Quad-Core ARM Cortex A53 64-Bit Processor and support up to 4GB 1600MHz LPDDR3 memory. It provides an eMMC module socket, MicroSD Card slot, Pi-2 Bus, Pi-P5+ Bus, USB 3.0 and many others peripheral devices interface for makers to integrate with sensors and devices. Various Operating Systems are made available by open source community and partner projects including numerous Linux Distributions, Android,  *BSD and many more to come.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -1079,11 +1036,7 @@ Apart from Linux, you also have a choice of a selection of *BSDs, Android, Remix
 		"short_title": "Pmod",
 		"image": "/toolkits/media/photos/50_Gf6O3FK.png",
 		"url": "https://store.digilentinc.com/pmod-modules-connectors/",
-		"notes": "Pmod™ devices are Digilent’s line of small I/O interface boards that offer an ideal way to extend the capabilities of programmable logic and embedded control boards. They allow sensitive signal conditioning circuits and high-power drive circuits to be placed where they are most effective - near sensors and actuators.
-
-Pmod modules communicate with system boards using 6, 8, or 12-pin connectors that can carry multiple digital control signals, including SPI and other serial protocols. Pmod modules allow for more effective designs by routing analog signals and power supplies only where they are needed, and away from digital controller boards.
-
-Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod standard lays out guidelines for form factor, communication protocols and access to a target audience through reference manuals, code examples, user guides, and technical support.",
+		"notes": "Pmod™ devices are Digilent’s line of small I/O interface boards that offer an ideal way to extend the capabilities of programmable logic and embedded control boards. They allow sensitive signal conditioning circuits and high-power drive circuits to be placed where they are most effective - near sensors and actuators. Pmod modules communicate with system boards using 6, 8, or 12-pin connectors that can carry multiple digital control signals, including SPI and other serial protocols. Pmod modules allow for more effective designs by routing analog signals and power supplies only where they are needed, and away from digital controller boards. Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod standard lays out guidelines for form factor, communication protocols and access to a target audience through reference manuals, code examples, user guides, and technical support.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2b"],
@@ -1251,8 +1204,7 @@ Pmod modules work on system boards that adhere to the Pmod Standard. The Pmod st
 		"short_title": "Pico",
 		"image": "/toolkits/media/photos/79.png",
 		"url": "https://www.raspberrypi.org/products/raspberry-pi-pico/",
-		"notes": "The new flexible $4 microcontroller board from Raspberry Pi.
-Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a brand new microcontroller chip designed by Raspberry Pi in the UK.",
+		"notes": "The new flexible $4 microcontroller board from Raspberry Pi. Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a brand new microcontroller chip designed by Raspberry Pi in the UK.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2a"],
@@ -1276,9 +1228,7 @@ Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, a bra
 		"short_title": "Cubelets",
 		"image": "/toolkits/media/photos/56.png",
 		"url": "https://dl.acm.org/doi/abs/10.1145/1180995.1181010",
-		"notes": "We describe work in progress on roBlocks, a computational construction kit that encourages users to experiment and play with a collection of sensor, logic and actuator blocks, exposing them to a variety of advanced concepts including kinematics, feedback and distributed control. Its interface presents novice users with a simple, tangible set of robotic blocks, whereas advanced users work with software tools to analyze and rewrite the programs embedded in each block. Early results suggest that roBlocks may be an effective vehicle to expose young people to complex ideas in science, technology, engineering and mathematics.
-
-Cubelets are the only toy that uses Tactile Coding to help builders of nearly any age explore robotics, coding, and more. Uniquely designed, they are little bundles of software inside little bundles of hardware. As you build a robot, you learn to build a program. It’s a fun and fascinating way to introduce big ideas through play.",
+		"notes": "We describe work in progress on roBlocks, a computational construction kit that encourages users to experiment and play with a collection of sensor, logic and actuator blocks, exposing them to a variety of advanced concepts including kinematics, feedback and distributed control. Its interface presents novice users with a simple, tangible set of robotic blocks, whereas advanced users work with software tools to analyze and rewrite the programs embedded in each block. Early results suggest that roBlocks may be an effective vehicle to expose young people to complex ideas in science, technology, engineering and mathematics. Cubelets are the only toy that uses Tactile Coding to help builders of nearly any age explore robotics, coding, and more. Uniquely designed, they are little bundles of software inside little bundles of hardware. As you build a robot, you learn to build a program. It’s a fun and fascinating way to introduce big ideas through play.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 3"],
@@ -1302,8 +1252,7 @@ Cubelets are the only toy that uses Tactile Coding to help builders of nearly an
 		"short_title": "SAM Labs modules",
 		"image": "/toolkits/media/photos/57.jpg",
 		"url": "https://samlabs.com/us/",
-		"notes": "Inspiring a generation of problem-solvers through STEM, STEAM and Coding courses
-Equipping educators with the tools, know-how, and mindset to reach learners’ potential for computational thinking",
+		"notes": "Inspiring a generation of problem-solvers through STEM, STEAM and Coding courses. Equipping educators with the tools, know-how, and mindset to reach learners’ potential for computational thinking",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 3"],
@@ -1375,8 +1324,7 @@ Equipping educators with the tools, know-how, and mindset to reach learners’ p
 		"short_title": "Qwiic",
 		"image": "/toolkits/media/photos/119.jpg",
 		"url": "https://www.sparkfun.com/qwiic",
-		"notes": "Prototyping with I2C has never been easier.
-SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface development boards with sensors, LCDs, relays and more.",
+		"notes": "Prototyping with I2C has never been easier. SparkFun's Qwiic Connect System uses 4-pin JST connectors to quickly interface development boards with sensors, LCDs, relays and more.",
 		"in_scope": true,
 		"labels": {
 			"Type of electronics": ["Type 2b"],
