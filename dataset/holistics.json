@@ -1,88 +1,88 @@
 {
     "Expertise in electronics": {
         "Type of connection": {
-            "Individual conductors": {"color": "#0fffff"},
-            "Multi-wire cables": {"color": "#f0ffff"},
-            "Direct module-to-module": {"color": "#ff0fff"},
-            "Wireless": {"color": "#ff0fff"}
+            "Individual conductors": 0.00,
+            "Multi-wire cables": 0.50,
+            "Direct module-to-module": 0.60,
+            "Wireless": 1.00
         },
         "Promoted with user groups": {
-            "K-12 Education": {"background": "#fff0ff"},
-            "Makers": {"background": "#ffff0f"},
-            "Professional engineers": {"background": "#fffff0"}
+            "K-12 Education": 1.00,
+            "Makers": 0.50,
+            "Professional engineers": 0.00
         },
         "Connection topology": {
-            "Star": {"color": "#fff0ff"},
-            "Hybrid star/bus": {"color": "#ffff0f"},
-            "Bus": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Star": 0.00,
+            "Hybrid star/bus": 0.50,
+            "Bus": 1.00,
+            "N/A": 1.00
         }
     },
 
     "Expertise in programming": {
         "Programming style": {
-            "Physical configuration": {"color": "#0fffff"},
-            "Software code": {"color": "#f0ffff"},
-            "N/A": {"color": "#ff0fff"}
+            "Physical configuration": 1.00,
+            "Software code": 0.00,
+            "N/A": 1.00
         },
         "Promoted with user groups": {
-            "K-12 Education": {"background": "#fff0ff"},
-            "Makers": {"background": "#ffff0f"},
-            "Professional engineers": {"background": "#fffff0"}
+            "K-12 Education": 1.00,
+            "Makers": 0.50,
+            "Professional engineers": 0.00
         }
     },
 
     "Ease of prototype construction": {        
         "Type of connection": {
-            "Individual conductors": {"color": "#0fffff"},
-            "Multi-wire cables": {"color": "#f0ffff"},
-            "Direct module-to-module": {"color": "#ff0fff"},
-            "Wireless": {"color": "#ff0fff"}
+            "Individual conductors": 0.00,
+            "Multi-wire cables": 0.33,
+            "Direct module-to-module": 0.66,
+            "Wireless": 1.00
         },
         "Programming style": {
-            "Physical configuration": {"color": "#0fffff"},
-            "Software code": {"color": "#f0ffff"},
-            "N/A": {"color": "#ff0fff"}
+            "Physical configuration": 1.00,
+            "Software code": 0.50,
+            "N/A": 1.0
         },
         "Connection mechanism": {
-            "Friction fit": {"background": "#fff0ff"},
-            "Locking mechanism": {"color": "#ffff0f"},
-            "Alligator clips": {"color": "#fffff0"},
-            "Screws": {"background": "#fff0ff"},
-            "Adhesive": {"color": "#ffff0f"},
-            "Thread": {"color": "#fffff0"},
-            "Magnetic": {"background": "#fff0ff"},
-            "Wireless": {"color": "#ffff0f"}
+            "Friction fit": 0.70,
+            "Locking mechanism": 0.70,
+            "Alligator clips": 0.70,
+            "Screws": 0.60,
+            "Adhesive": 0.20,
+            "Thread": 0.00,
+            "Magnetic": 0.75,
+            "Wireless": 1.00
         },
         "Connection topology": {
-            "Star": {"color": "#fff0ff"},
-            "Hybrid star/bus": {"color": "#ffff0f"},
-            "Bus": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Star": 0.33,
+            "Hybrid star/bus": 0.66,
+            "Bus": 1.00,
+            "N/A": 1.00
         }
     },
 
     "Ease of moving from prototype to product": {
         "Programming style": {
-            "Physical configuration": {"color": "#0fffff"},
-            "Software code": {"color": "#f0ffff"},
-            "N/A": {"color": "#ff0fff"}
+            "Physical configuration": 0.00,
+            "Software code": 1.00,
+            "N/A": 1.00
         },
         "Existing use": {
-            "Only used in one-offs": {"color": "#0fffff"},
-            "Multiple copies": {"color": "#f0ffff"},
-            "In commercial products": {"color": "#ff0fff"}
+            "Only used in one-offs": 0.00,
+            "Multiple copies": 0.50,
+            "In commercial products": 1.00
         },
         "Dependency during deployment": {
-            "Always tethered": {"color": "#fff0ff"},
-            "Wireless server needed": {"color": "#ffff0f"},
-            "Fully self-contained": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Always tethered": 0.00,
+            "Wireless server needed": 0.50,
+            "Fully self-contained": 1.00,
+            "N/A": 1.00
         },
         "Open source": {
-            "Fully": {"color": "#fff0ff"},
-            "Partial": {"color": "#ffff0f"},
-            "Closed": {"color": "#fffff0"}
+            "Fully": 1.00,
+            "Partial": 0.50,
+            "Closed": 0.00
         }
     }
 }
