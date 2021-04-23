@@ -59,7 +59,7 @@
             "Fully self-contained": {"color": "#fffff0"},
             "N/A": {"color": "#fffff0"}
         },
-        "Dependencies during deployment": {
+        "Dependency during deployment": {
             "Always tethered": {"color": "#fff0ff"},
             "Wireless server needed": {"color": "#ffff0f"},
             "Fully self-contained": {"color": "#fffff0"},
