@@ -20,7 +20,7 @@
         "Promoted with user groups": {
             "K-12 Education": {"background": "#fff0ff"},
             "Makers": {"background": "#ffff0f"},
-            "Professional background": {"background": "#fffff0"}
+            "Professional engineers": {"background": "#fffff0"}
         }
     },
     "Assembly of Prototypes": {
@@ -70,7 +70,7 @@
         "Existing use": {
             "Only used in one-offs": {"color": "#0fffff"},
             "Multiple copies": {"color": "#f0ffff"},
-            "in commercial products": {"color": "#ff0fff"}
+            "In commercial products": {"color": "#ff0fff"}
         },
         "Commercially available": {
             "Yes": {"color": "#fff0ff"},
