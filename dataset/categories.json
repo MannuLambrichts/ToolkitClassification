@@ -31,53 +31,60 @@
             "Wireless": {"color": "#ff0fff"}
         },
         "Connection mechanism": {
-            "d": {"background": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Friction fit": {"background": "#fff0ff"},
+            "Locking mechanism": {"color": "#ffff0f"},
+            "Alligator clips": {"color": "#fffff0"},
+            "Screws": {"background": "#fff0ff"},
+            "Adhesive": {"color": "#ffff0f"},
+            "Thread": {"color": "#fffff0"},
+            "Magnetic": {"background": "#fff0ff"},
+            "Wireless": {"color": "#ffff0f"},
         },
         "Connection topology": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Star": {"color": "#fff0ff"},
+            "Hybrid star/bus": {"color": "#ffff0f"},
+            "Bus": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
         }
     },
     "Deploying and Configuring": {
         "Programming style": {
-            "a": {"color": "#0fffff"},
-            "b": {"color": "#f0ffff"},
-            "c": {"color": "#ff0fff"}
+            "Physical configuration": {"color": "#0fffff"},
+            "Software code": {"color": "#f0ffff"},
+            "N/A": {"color": "#ff0fff"}
         },
         "Dependencies for programming": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Wired computer": {"color": "#fff0ff"},
+            "Wireless programming": {"color": "#ffff0f"},
+            "Fully self-contained": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
         },
         "Dependencies during deployment": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Always tethered": {"color": "#fff0ff"},
+            "Wireless server needed": {"color": "#ffff0f"},
+            "Fully self-contained": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
         }
     },
     "Availability and Adoption": {
         "Existing use": {
-            "a": {"color": "#0fffff"},
-            "b": {"color": "#f0ffff"},
-            "c": {"color": "#ff0fff"}
+            "Only used in one-offs": {"color": "#0fffff"},
+            "Multiple copies": {"color": "#f0ffff"},
+            "in commercial products": {"color": "#ff0fff"}
         },
         "Commercially available": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Yes": {"color": "#fff0ff"},
+            "No longer": {"color": "#ffff0f"},
+            "Never": {"color": "#fffff0"}
         },
         "Third party use": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Yes": {"color": "#fff0ff"},
+            "No": {"color": "#ffff0f"},
         },
         "Open source": {
-            "d": {"color": "#fff0ff"},
-            "e": {"color": "#ffff0f"},
-            "f": {"color": "#fffff0"}
+            "Fully": {"color": "#fff0ff"},
+            "Partial": {"color": "#ffff0f"},
+            "Closed": {"color": "#fffff0"}
         }
     }
 }
