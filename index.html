@@ -186,7 +186,6 @@ toolkits = {
                 var i = 0;
 
                 for (const toolkit in toolkits) {
-                    console.log(toolkit);
 
                     var row = '<tr>';
                     row += '<th>' + (++i) + '</th>';
@@ -206,6 +205,13 @@ toolkits = {
                                         row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
                                     }  else {
                                         console.log("Value not found: " + value + " - " + categories[group][category]);
+                                        
+                                        console.log(group);
+                                        console.log(category);
+                                        console.log(categories);
+                                        console.log(categories[group]);
+                                        console.log("----------");
+                                        
                                     }                          
                                 }                        
                             }
