@@ -180,70 +180,55 @@ toolkits = {
         
         
 
-            $.getJSON("dataset/toolkits.json", function(toolkit_files) {  
+            $.getJSON("dataset/toolkits.json", function(toolkits) {  
 
                 // build the table
                 var i = 0;
 
+                for (const toolkit in toolkits) {
 
-                var ready = 0; // toolkits that are ready
-                var total = Object.keys(toolkit_files).length; // number of toolkits that need to be loaded
-                console.log(toolkit_files);
+                    var row = '<tr>';
+                    row += '<th>' + (++i) + '</th>';
+                    row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
+                    row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
+                    row += '<td>' + (toolkits[toolkit]['image'] !== "" ? '' : '<img src="' + toolkits[toolkit]['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
 
-                for (const file in toolkit_files) {
-                    console.log("ready: " + ready);
-                    console.log(file);
-
-                    $.getJSON(toolkit_files[file], function(toolkit) {
-
-                        var row = '<tr>';
-                        row += '<th>' + (++i) + '</th>';
-                        row += '<td><a href="' + toolkit['url'] + '" target="_blank">' + toolkit['title'] + '</a></td>';
-                        row += '<td class="font-italic">' + toolkit['short_title'] + '</td>';
-                        row += '<td>' + (toolkit['image'] !== "" ? '' : '<img src="' + toolkit['image'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
-
-                        // loop through each category and if it is provided for the current toolkit fill in the table
-                        for (const group in categories) {
-                            for (const category in categories[group]) {
-                                row += '<td>';
-                                // check if the category is provided for the toolkit
-                                if (category in toolkit['labels']) {                        
-                                    for (const value of toolkit['labels'][category]) {
-                                        // check if the value that is provided exists
-                                        if (value in categories[group][category]) {
-                                            row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
-                                        }                            
-                                    }                        
-                                }
-                                row += '</td>';
+                    // loop through each category and if it is provided for the current toolkit fill in the table
+                    for (const group in categories) {
+                        for (const category in categories[group]) {
+                            row += '<td>';
+                            // check if the category is provided for the toolkit
+                            if (category in toolkits[toolkit]['labels']) {                        
+                                for (const value of toolkits[toolkit]['labels'][category]) {
+                                    // check if the value that is provided exists
+                                    if (value in categories[group][category]) {
+                                        row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
+                                    }                            
+                                }                        
                             }
+                            row += '</td>';
                         }
+                    }
 
-                        row += '</tr>';
-                        $('#toolkits').append(row);
+                    row += '</tr>';
+                    $('#toolkits').append(row);
+                }
+            
 
-                        ready++;
-                        console.log(ready);
-                        console.log(toolkit['title']);
-                        // we processed the last toolkit so we can enable the sorting
-                        if (ready == total) {
-                            // table sorter
-                            $("#table").tablesorter({
-                                theme: 'bootstrap',
-                                showProcessing: true,
-                                widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
-                                widgetOptions: {
-                                    filter_reset: '.reset',
-                                    filter_hideFilters: true,
-                                    filter_cssFilter: "form-control",
-                                    stickyHeaders_offset: 62,
-                                    columnSelector_container : $('#columnSelector'),
-                                    columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
-                                },
-                            });
-                        }
-                    });
-                }               
+                // table sorter
+                $("#table").tablesorter({
+                    theme: 'bootstrap',
+                    showProcessing: true,
+                    widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
+                    widgetOptions: {
+                        filter_reset: '.reset',
+                        filter_hideFilters: true,
+                        filter_cssFilter: "form-control",
+                        stickyHeaders_offset: 62,
+                        columnSelector_container : $('#columnSelector'),
+                        columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                    },
+                });                                 
             });
         });
 
