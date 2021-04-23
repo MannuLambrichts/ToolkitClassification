@@ -40,7 +40,7 @@
 	"Neuron": "dataset/toolkits/Neuron.json", 
 	"Particle": "dataset/toolkits/Particle.json", 
 	"Phidgets": "dataset/toolkits/Phidgets.json", 
-	"Pin  play": "dataset/toolkits/Pin  Play.json", 
+	"Pin play": "dataset/toolkits/PinPlay.json", 
 	"Pine": "dataset/toolkits/Pine.json", 
 	"Pmod": "dataset/toolkits/Pmod.json", 
 	"Printoo": "dataset/toolkits/Printoo.json", 
