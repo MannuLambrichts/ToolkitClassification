@@ -1,0 +1,88 @@
+{
+    "Expertise in electronics": {
+        "Type of connection": {
+            "Individual conductors": {"color": "#0fffff"},
+            "Multi-wire cables": {"color": "#f0ffff"},
+            "Direct module-to-module": {"color": "#ff0fff"},
+            "Wireless": {"color": "#ff0fff"}
+        },
+        "Promoted with user groups": {
+            "K-12 Education": {"background": "#fff0ff"},
+            "Makers": {"background": "#ffff0f"},
+            "Professional engineers": {"background": "#fffff0"}
+        },
+        "Connection topology": {
+            "Star": {"color": "#fff0ff"},
+            "Hybrid star/bus": {"color": "#ffff0f"},
+            "Bus": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
+        }
+    },
+
+    "Expertise in programming": {
+        "Programming style": {
+            "Physical configuration": {"color": "#0fffff"},
+            "Software code": {"color": "#f0ffff"},
+            "N/A": {"color": "#ff0fff"}
+        },
+        "Promoted with user groups": {
+            "K-12 Education": {"background": "#fff0ff"},
+            "Makers": {"background": "#ffff0f"},
+            "Professional engineers": {"background": "#fffff0"}
+        }
+    },
+
+    "Ease of prototype construction": {        
+        "Type of connection": {
+            "Individual conductors": {"color": "#0fffff"},
+            "Multi-wire cables": {"color": "#f0ffff"},
+            "Direct module-to-module": {"color": "#ff0fff"},
+            "Wireless": {"color": "#ff0fff"}
+        },
+        "Programming style": {
+            "Physical configuration": {"color": "#0fffff"},
+            "Software code": {"color": "#f0ffff"},
+            "N/A": {"color": "#ff0fff"}
+        },
+        "Connection mechanism": {
+            "Friction fit": {"background": "#fff0ff"},
+            "Locking mechanism": {"color": "#ffff0f"},
+            "Alligator clips": {"color": "#fffff0"},
+            "Screws": {"background": "#fff0ff"},
+            "Adhesive": {"color": "#ffff0f"},
+            "Thread": {"color": "#fffff0"},
+            "Magnetic": {"background": "#fff0ff"},
+            "Wireless": {"color": "#ffff0f"}
+        },
+        "Connection topology": {
+            "Star": {"color": "#fff0ff"},
+            "Hybrid star/bus": {"color": "#ffff0f"},
+            "Bus": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
+        }
+    },
+
+    "Ease of moving from prototype to product": {
+        "Programming style": {
+            "Physical configuration": {"color": "#0fffff"},
+            "Software code": {"color": "#f0ffff"},
+            "N/A": {"color": "#ff0fff"}
+        },
+        "Existing use": {
+            "Only used in one-offs": {"color": "#0fffff"},
+            "Multiple copies": {"color": "#f0ffff"},
+            "In commercial products": {"color": "#ff0fff"}
+        },
+        "Dependency during deployment": {
+            "Always tethered": {"color": "#fff0ff"},
+            "Wireless server needed": {"color": "#ffff0f"},
+            "Fully self-contained": {"color": "#fffff0"},
+            "N/A": {"color": "#fffff0"}
+        },
+        "Open source": {
+            "Fully": {"color": "#fff0ff"},
+            "Partial": {"color": "#ffff0f"},
+            "Closed": {"color": "#fffff0"}
+        }
+    }
+}

@@ -1,1 +1,139 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="static/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/tablesorter/theme.bootstrap_4.css">
+
+    <script src="static/jquery/jquery-3.4.1.min.js"></script>
+    <script src="static/tablesorter/jquery.tablesorter.js"></script>
+    <script src="static/tablesorter/jquery.tablesorter.widgets.js"></script>
+    <script src="static/tablesorter/widget-columnSelector.js"></script>
+
+    <title>Classification</title>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Classifications</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="holistics.html">Holistics</a>
+                </li>
+                <li class="nav-item">
+                    <input id="colSelect1" type="checkbox" class="hidden">
+                    <label class="nav-link btn m-0" for="colSelect1">Filter columns</label>
+                    <div id="columnSelector" class="columnSelector"></div>
+                </li>
+            </ul>    
+
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table table-bordered tablesorter" id="table">    
+                <thead class="thead-light">
+                    <tr id="column_group">
+                        <th class="text-center columnSelector-disable sorter-false" colspan="4"></th>
+                    </tr>
+                    <tr id="columns">
+                        <th class="text-center columnSelector-disable sorter-false">Nr</th>
+                        <th class="text-center columnSelector-disable">Name</th>
+                        <th class="text-center">Short name</th>
+                        <th class="text-center columnSelector-disable sorter-false">Image</th>
+                    </tr>        
+                </thead>    
+                <tbody id="toolkits"><!-- filled in by JavaScript --></tbody>
+            </table> 
+        </div>
+    </div>
+
+    <script src="static/bootstrap4/js/bootstrap.min.js"></script>
+    
+    <script>
+        $.getJSON("dataset/holistics.json", function(categories) {  
+            // build the header of the table          
+            for (const group in categories) {
+                var i = 0;
+                for (const category in categories[group]) {
+                    $('#columns').append('<th class="text-center">' + category + '</th>');
+                    i++;
+                }
+                $('#column_group').append('<th class="text-center sorter-false columnSelector-disable" colspan="' + i + '">' + group + '</th>');
+            }    
+        
+            $.getJSON("dataset/toolkits.json", function(toolkits) {  
+
+                // build the table
+                var i = 0;
+
+                for (const toolkit in toolkits) {
+
+                    var row = '<tr>';
+                    row += '<th>' + (++i) + '</th>';
+                    row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
+                    row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
+                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['thumbnail'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+
+                    // loop through each category and if it is provided for the current toolkit fill in the table
+                    for (const group in categories) {
+                        for (const category in categories[group]) {
+                            row += '<td>';
+                            // check if the category is provided for the toolkit
+                            if (category in toolkits[toolkit]['labels']) {                        
+                                for (const value of toolkits[toolkit]['labels'][category]) {
+                                    // check if the value that is provided exists
+                                    if (value in categories[group][category]) {
+                                        row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
+                                    }  else {
+                                        // debug code that detects if there is a typo somewhere
+                                        console.log("Value not found: " + value + " - " + categories[group][category]);                                        
+                                        console.log(group);
+                                        console.log(category);
+                                        console.log(categories);
+                                        console.log(categories[group]);
+                                        console.log("----------");                                        
+                                    }                          
+                                }                        
+                            }
+                            row += '</td>';
+                        }
+                    }
+
+                    row += '</tr>';
+                    $('#toolkits').append(row);
+                }
+            
+
+                // table sorter
+                $("#table").tablesorter({
+                    theme: 'bootstrap',
+                    showProcessing: true,
+                    widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
+                    widgetOptions: {
+                        filter_reset: '.reset',
+                        filter_hideFilters: true,
+                        filter_cssFilter: "form-control",
+                        stickyHeaders_offset: 62,
+                        columnSelector_container : $('#columnSelector'),
+                        columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                    },
+                });                                 
+            });
+        });
+
+    </script>
+</body>
+</html>
