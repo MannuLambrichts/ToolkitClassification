@@ -14,12 +14,12 @@
     <script src="static/tablesorter/jquery.tablesorter.widgets.js"></script>
     <script src="static/tablesorter/widget-columnSelector.js"></script>
 
-    <title>Classification</title>
+    <title>Classification - holistic categories</title>
 </head>
 <body>
     <!-- Header -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Classifications</a>
+        <a class="navbar-brand" href="index.html">Classifications - holistic categories</a>
     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="holistics.html">Holistics</a>
+                    <a class="nav-link" href="index.html">Categories</a>
                 </li>
                 <li class="nav-item">
                     <input id="colSelect1" type="checkbox" class="hidden">
@@ -40,14 +40,16 @@
         </div>
     </nav>
 
+    <div class="container mb-4">
+        <div class="row" id="inputFields"></div>
+        <button type="button" class="btn btn-success disabled m-2" id="calculateButton" onclick="calculate()">Update</button>
+    </div>
+
     <!-- Content -->
     <div class="container-fluid">
         <div class="table-responsive">
             <table class="table table-bordered tablesorter" id="table">    
                 <thead class="thead-light">
-                    <tr id="column_group">
-                        <th class="text-center columnSelector-disable sorter-false" colspan="4"></th>
-                    </tr>
                     <tr id="columns">
                         <th class="text-center columnSelector-disable sorter-false">Nr</th>
                         <th class="text-center columnSelector-disable">Name</th>
@@ -63,74 +65,363 @@
     <script src="static/bootstrap4/js/bootstrap.min.js"></script>
     
     <script>
-        $.getJSON("dataset/holistics.json", function(categories) {  
-            // build the header of the table          
-            for (const group in categories) {
-                var i = 0;
-                for (const category in categories[group]) {
-                    $('#columns').append('<th class="text-center">' + category + '</th>');
-                    i++;
+
+/*
+        dataset = {
+            ".NET Gadgeteer": {
+                "title": ".NET Gadgeteer",
+                "short_title": "Gadgeteer",
+                "image": "dataset/img/Gadgeteer.jpg",
+                "thumbnail": "dataset/img/Gadgeteer-thumbnail.jpg",
+                "url": "https://dl.acm.org/doi/abs/10.1145/2445196.2445315",
+                "notes": "In this paper we present the features of a new physical device prototyping platform called Microsoft .NET Gadgeteer along with our initial experiences using it to teach computer science in high schools. Gadgeteer makes it easy for newcomers to electronics and computing to plug together modules with varied functionality and to program the resulting system's behavior. We believe the platform is particularly suited to teaching modern programming concepts such as object-oriented, event-based programming and it could be a timely addition to established teaching tools given the current interest in improving high school computer science education in some regions. We have run a number of pilot studies in the US and in the UK with students of varying age and ability. Our results indicate that the tangible and expressive nature of Gadgeteer helps to engage and motivate a diverse set of students. We were also pleasantly surprised by the level of polish and sophistication of the devices which were built. We hope to further explore the potential of Gadgeteer for teaching in future work and we encourage others to build on our experiences.",
+                "in_scope": true,
+                "labels": {
+                    "Type of electronics": ["Type 3"],
+                    "Electronic sub-domain": ["Generic electronic systems"],
+                    "Promoted with user groups": ["K-12 Education", "Makers"],
+                    "Type of connection": ["Multi-wire cables"],
+                    "Connection mechanism": ["Friction fit"],
+                    "Connection topology": ["Hybrid star/bus"],
+                    "Programming style": ["Software code"],
+                    "Dependencies for programming": ["Wired computer"],
+                    "Dependency during deployment": ["Fully self-contained"],
+                    "Existing use": ["Multiple copies"],
+                    "Commercially available": ["Yes"],
+                    "Third party use": ["Yes"],
+                    "Open source": ["Partial"]
                 }
-                $('#column_group').append('<th class="text-center sorter-false columnSelector-disable" colspan="' + i + '">' + group + '</th>');
+            },
+
+            "A construction kit for electronic textiles": {
+                "title": "A construction kit for electronic textiles",
+                "short_title": "e-textile construction kit",
+                "image": "dataset/img/eTextileConstructionKit.png",
+                "thumbnail": "dataset/img/eTextileConstructionKit-thumbnail.jpg",
+                "url": "https://ieeexplore.ieee.org/document/4067731",
+                "notes": "Construction kits have long been popular as educational artifacts, supporting and encouraging creative explorations of engineering and design; but to date, such kits have had little connection with the new and expanding field of electronic textiles (e-textiles). We believe that creating an e-textile construction kit could provide a powerful new medium to engage a diverse range of students in electrical engineering and computer science. This paper, then, describes a construction kit designed to introduce novices to electronics, computing and design via e-textiles. We describe each component of the kit, provide examples of constructions that were built with the kit, and examine the durability of these constructions. We conclude with a discussion of the results of preliminary user testing and an exploration of our plans for continued work in this area.",
+                "in_scope": true,
+                "labels": {
+                    "Type of electronics": ["Type 3"],
+                    "Electronic sub-domain": ["Wearables / textiles"],
+                    "Promoted with user groups": ["Makers"],
+                    "Type of connection": ["Individual conductors"],
+                    "Connection mechanism": ["Thread"],
+                    "Connection topology": ["Star"],
+                    "Programming style": ["Software code"],
+                    "Dependencies for programming": ["Wired computer"],
+                    "Dependency during deployment": ["Fully self-contained"],
+                    "Existing use": ["Only used in one-offs"],
+                    "Commercially available": ["Never"],
+                    "Third party use": ["Yes"],
+                    "Open source": ["Partial"]
+                }
+            },
+
+            "A Method and Toolkit for Digital Musical Instruments Generating Ideas and Prototypes": {
+                "title": "A Method and Toolkit for Digital Musical Instruments Generating Ideas and Prototypes",
+                "short_title": "DMI toolkit",
+                "image": "dataset/img/DMIToolkit.jpg",
+                "thumbnail": "dataset/img/DMIToolkit-thumbnail.jpg",
+                "url": "https://www.researchgate.net/publication/313538280_A_Method_and_Toolkit_for_Digital_Musical_Instruments_Generating_Ideas_and_Prototypes",
+                "notes": "Digital musical instruments (DMIs) make up a class of devices in which gestural control and sound production are physically decoupled, but digitally mapped. This work discusses aspects of DMI design by focusing on the complexity of the design space and the importance of prototyping cycles. The authors' research questions cover how to provide an initial path for generating DMI ideas and how to reduce the time and effort required to build functional DMI prototypes. To address these questions, they propose a new methodology and an associated physical prototyping toolkit, which has building blocks inspired by of existing instruments. Preliminary tests with musicians and DMI designers revealed a strong potential for its use in the development of DMIs, and also uncovered limitations of the current toolkit. This article is part of a special issue on multimedia technologies for enriched music.",
+                "in_scope": true,
+                "labels": {
+                    "Type of electronics": ["Type 3"],
+                    "Electronic sub-domain": ["Musical instruments"],
+                    "Promoted with user groups": ["Makers"],
+                    "Type of connection": ["Direct module-to-module"],
+                    "Connection mechanism": ["Friction fit"],
+                    "Connection topology": ["Bus"],
+                    "Programming style": ["Software code"],
+                    "Dependencies for programming": ["Wired computer"],
+                    "Dependency during deployment": ["Always tethered"],
+                    "Existing use": ["Only used in one-offs"],
+                    "Commercially available": ["Never"],
+                    "Third party use": ["Yes"],
+                    "Open source": ["Partial"]
+                }
+            },
+
+            "Adafruit Circuit Playground": {
+                "title": "Adafruit Circuit Playground",
+                "short_title": "Circuit Playground",
+                "image": "dataset/img/CircuitPlayground.jpg",
+                "thumbnail": "dataset/img/CircuitPlayground-thumbnail.jpg",
+                "url": "https://learn.adafruit.com/introducing-circuit-playground/overview",
+                "notes": "Would you like to learn electronics, with an all-in-one board that has sensors and LEDs built in? Circuit Playground is here, and it's the best way to practice programming on real hardware. No soldering or sewing required! Circuit Playground features an ATmega32u4 micro-processor, just like our popular Flora. It also is round and has alligator-clip pads around it. You can power it from USB, a AAA battery pack, or Lipoly (for advanced users). Program your code into it, then take it on the go.",
+                "in_scope": true,
+                "labels": {
+                    "Type of electronics": ["Type 2a"],
+                    "Electronic sub-domain": ["Generic electronic systems"],
+                    "Promoted with user groups": ["K-12 Education", "Makers"],
+                    "Type of connection": ["Individual conductors"],
+                    "Connection mechanism": ["Alligator clips"],
+                    "Connection topology": ["Star"],
+                    "Programming style": ["Software code"],
+                    "Dependencies for programming": ["Wired computer"],
+                    "Dependency during deployment": ["Fully self-contained"],
+                    "Existing use": ["Only used in one-offs"],
+                    "Commercially available": ["Yes"],
+                    "Third party use": ["Yes"],
+                    "Open source": ["Fully"]
+                }
+            }
+        }
+
+        holistics = {
+            "Expertise in electronics": {
+                "Type of connection": {
+                    "Individual conductors": 0.00,
+                    "Multi-wire cables": 0.50,
+                    "Direct module-to-module": 0.60,
+                    "Wireless": 1.00
+                },
+                "Promoted with user groups": {
+                    "K-12 Education": 1.00,
+                    "Makers": 0.50,
+                    "Professional engineers": 0.00
+                },
+                "Connection topology": {
+                    "Star": 0.00,
+                    "Hybrid star/bus": 0.50,
+                    "Bus": 1.00,
+                    "N/A": 1.00
+                }
+            },
+
+            "Expertise in programming": {
+                "Programming style": {
+                    "Physical configuration": 1.00,
+                    "Software code": 0.00,
+                    "N/A": 1.00
+                },
+                "Promoted with user groups": {
+                    "K-12 Education": 1.00,
+                    "Makers": 0.50,
+                    "Professional engineers": 0.00
+                }
+            },
+
+            "Ease of prototype construction": {        
+                "Type of connection": {
+                    "Individual conductors": 0.00,
+                    "Multi-wire cables": 0.33,
+                    "Direct module-to-module": 0.66,
+                    "Wireless": 1.00
+                },
+                "Programming style": {
+                    "Physical configuration": 1.00,
+                    "Software code": 0.50,
+                    "N/A": 1.0
+                },
+                "Connection mechanism": {
+                    "Friction fit": 0.70,
+                    "Locking mechanism": 0.70,
+                    "Alligator clips": 0.70,
+                    "Screws": 0.60,
+                    "Adhesive": 0.20,
+                    "Thread": 0.00,
+                    "Magnetic": 0.75,
+                    "Wireless": 1.00
+                },
+                "Connection topology": {
+                    "Star": 0.33,
+                    "Hybrid star/bus": 0.66,
+                    "Bus": 1.00,
+                    "N/A": 1.00
+                }
+            },
+
+            "Ease of moving from prototype to product": {
+                "Programming style": {
+                    "Physical configuration": 0.00,
+                    "Software code": 1.00,
+                    "N/A": 1.00
+                },
+                "Existing use": {
+                    "Only used in one-offs": 0.00,
+                    "Multiple copies": 0.50,
+                    "In commercial products": 1.00
+                },
+                "Dependency during deployment": {
+                    "Always tethered": 0.00,
+                    "Wireless server needed": 0.50,
+                    "Fully self-contained": 1.00,
+                    "N/A": 1.00
+                },
+                "Open source": {
+                    "Fully": 1.00,
+                    "Partial": 0.50,
+                    "Closed": 0.00
+                }
+            }
+        }
+*/
+        button_enabled = false;
+        toolkits = {};
+        holistics = {};
+
+        function calculate(){
+            if (button_enabled)
+                buildTable(toolkits); 
+        }
+
+        // hash the given string so it can be used as an ID
+        function hash(data) {
+            data = data.replace(/\s+/g, '');
+            data = data.replace(/\//g, '');
+            data = data.toLowerCase();
+            return data;
+        }
+
+        // retrieve the score from an input field
+        function retrieveScore(element) {
+            return Math.min(1.0, Math.max(0.0, parseFloat($('#' + hash(element)).val())));
+        }
+
+
+
+        // build the table
+        function buildTable() {
+            $('#toolkits').empty();
+
+            // build the table
+            var i = 0;
+
+            for (const toolkit in toolkits) {
+
+                var row = '<tr>';
+                row += '<th>' + (++i) + '</th>';
+                row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
+                row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
+                row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['thumbnail'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
+
+                // loop through each category and if it is provided for the current toolkit fill in the table
+                for (const holistic in holistics) {
+                    row += '<td>';
+
+                    score = 0.0;
+
+                    number_of_categories = 0;
+
+                    for (const category in holistics[holistic]) {                            
+                        // check if the category is provided for the toolkit
+                        if (category in toolkits[toolkit]['labels']) {      
+                            number_of_categories++;                  
+                            best_value_score = 0;                                
+
+                            for (const value of toolkits[toolkit]['labels'][category]) {
+                                // check if the value that is provided exists
+                                if (value in holistics[holistic][category]) {                                       
+                                    best_value_score = Math.max(retrieveScore(holistic + category + value), best_value_score);
+                                }  else {
+                                    // debug code that detects if there is a typo somewhere
+                                    console.log("Value not found: " + value + " - " + holistics[holistic][category]);                                        
+                                    console.log(holistic);
+                                    console.log(category);
+                                    console.log(holistics);
+                                    console.log(holistics[holistic]);
+                                    console.log("----------");                                        
+                                }                          
+                            }  
+                            score += best_value_score * retrieveScore(holistic + category);
+                                            
+                        }
+                        
+                    }
+                    row += Math.round((score / number_of_categories) * 10000) / 10000;
+                    row += '</td>';
+                }
+
+                row += '</tr>';
+                $('#toolkits').append(row);
+            }
+
+
+            // table sorter
+            $("#table").tablesorter({
+                theme: 'bootstrap',
+                showProcessing: true,
+                widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
+                widgetOptions: {
+                    filter_reset: '.reset',
+                    filter_hideFilters: true,
+                    filter_cssFilter: "form-control",
+                    stickyHeaders_offset: 62,
+                    columnSelector_container : $('#columnSelector'),
+                    columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                },
+            });                           
+
+        }
+
+
+
+
+
+
+
+
+
+        for (holistic in holistics) {
+
+            // parse each holistic category 
+            var column = '';            
+            column += '<div class="col-md-12 col-sm-12 d-flex">';
+                column += '<div class="card m-2 w-100">';
+                    column += '<div class="card-body">';
+                        column += '<a class="h6" data-toggle="collapse" href="#collapse' + hash(holistic) + '" role="button" aria-expanded="false" aria-controls="collapseExample">' + holistic + '</a>';
+                        //column += '<h5 class="card-title">' + holistic + '</h5>';
+                        column += '<div id="collapse' + hash(holistic) + '" class="collapse">';
+                        for (category in holistics[holistic]) {
+                            column += '<h6 class="card-subtitle mb-2 mt-3 text-muted">' + category + '</h6>';   
+                            
+                            // dimension weights
+                            column += '<div class="card-text input-group m-1">';
+                                column += '<div class="input-group-prepend">';
+                                    column += '<span class="input-group-text font-weight-bold">' + category + '</span>';
+                                column += '</div>';
+                                column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category) + '" value="1.0">';
+                            column += '</div>';                         
+                            
+                            // value weights
+                            for (value in holistics[holistic][category]) {
+                                column += '<div class="card-text input-group m-1">';
+                                    column += '<div class="input-group-prepend">';
+                                        column += '<span class="input-group-text">' + value + '</span>';
+                                    column += '</div>';
+                                    column += '<input type="text" aria-label="weight" class="form-control text-right" id="' + hash(holistic + category + value) + '" value="' + holistics[holistic][category][value] + '">';
+                                column += '</div>';
+                            }
+                        }    
+                        column += '</div>';           
+                    column += '</div>';
+                column += '</div>';                
+            column += '</div>';
+
+            $('#inputFields').append(column);
+        }
+
+        
+        // get the holistics
+        $.getJSON("dataset/holistics.json", function(dataset_holistics) {  
+            holistics = dataset_toolkits;
+
+            // build the header of the table          
+            for (const group in holistics) {
+                $('#columns').append('<th class="text-center">' + group + '</th>');
             }    
         
-            $.getJSON("dataset/toolkits.json", function(toolkits) {  
+            // get the toolkits
+            $.getJSON("dataset/toolkits.json", function(dataset_toolkits) {  
+                toolkits = dataset_toolkits;
 
-                // build the table
-                var i = 0;
-
-                for (const toolkit in toolkits) {
-
-                    var row = '<tr>';
-                    row += '<th>' + (++i) + '</th>';
-                    row += '<td><a href="' + toolkits[toolkit]['url'] + '" target="_blank">' + toolkits[toolkit]['title'] + '</a></td>';
-                    row += '<td class="font-italic">' + toolkits[toolkit]['short_title'] + '</td>';
-                    row += '<td>' + (toolkits[toolkit]['image'] === "" ? '' : '<img src="' + toolkits[toolkit]['thumbnail'] + '" class="img-fluid" style="max-width:75px" alt="Illustration">') + '</td>';
-
-                    // loop through each category and if it is provided for the current toolkit fill in the table
-                    for (const group in categories) {
-                        for (const category in categories[group]) {
-                            row += '<td>';
-                            // check if the category is provided for the toolkit
-                            if (category in toolkits[toolkit]['labels']) {                        
-                                for (const value of toolkits[toolkit]['labels'][category]) {
-                                    // check if the value that is provided exists
-                                    if (value in categories[group][category]) {
-                                        row += '<p style="background:' + categories[group][category][value]['background'] + '; color:' + categories[group][category][value]['foreground'] + '">' + value + '</p>';
-                                    }  else {
-                                        // debug code that detects if there is a typo somewhere
-                                        console.log("Value not found: " + value + " - " + categories[group][category]);                                        
-                                        console.log(group);
-                                        console.log(category);
-                                        console.log(categories);
-                                        console.log(categories[group]);
-                                        console.log("----------");                                        
-                                    }                          
-                                }                        
-                            }
-                            row += '</td>';
-                        }
-                    }
-
-                    row += '</tr>';
-                    $('#toolkits').append(row);
-                }
-            
-
-                // table sorter
-                $("#table").tablesorter({
-                    theme: 'bootstrap',
-                    showProcessing: true,
-                    widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
-                    widgetOptions: {
-                        filter_reset: '.reset',
-                        filter_hideFilters: true,
-                        filter_cssFilter: "form-control",
-                        stickyHeaders_offset: 62,
-                        columnSelector_container : $('#columnSelector'),
-                        columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
-                    },
-                });                                 
+                buildTable();  
+                
+                // enable button once toolkits are loaded
+                button_enabled = true;
+                $("#calculateButton").removeClass('disabled');
             });
         });
 
