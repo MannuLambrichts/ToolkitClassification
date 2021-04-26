@@ -14,12 +14,11 @@
     <script src="static/tablesorter/jquery.tablesorter.js"></script>
     <script src="static/tablesorter/jquery.tablesorter.widgets.js"></script>
     <script src="static/tablesorter/widget-columnSelector.js"></script>
-    <!-- <script src="static/popper/popper.min.js"></script> -->
 
     <title>Electronics Toolkit Classification</title>
 </head>
 <body>
-
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +49,7 @@
                             <button type="button" class="btn btn-link btn-sm nav-link" data-toggle="popover" title="Hints and tips" data-html="true" data-placement="auto" data-content="<ul><li>Use <i>shift + scroll</i> to scroll horizontally.</li><li>Order columns by clicking on the header.</li><li>Use <i>shift + click</i> to order multiple columns.</li><li>Use the text boxes below the header to filter rows.</li><li>Use the input fields to change the weights for each objective characteristic.</li></ul>"><i class="fas fa-lightbulb"></i> Hints</button>
                         </li>     
                         <li class="nav-item">
-                            <a class="nav-link" href="https://dl.acm.org/conference/icons/proceedings"><u><img src="static/img/acmdl.png" class="img-fluid" style="max-width:17px; max-height: 17px;" alt="Illustration"> ACM DL</u></a>
+                            <a class="nav-link" href="https://dl.acm.org/conference/icons/proceedings"><u><img src="static/img/acmdl.png" class="img-fluid" style="max-width:17px; max-height: 17px;" alt="ACM DL icon"> ACM DL</u></a>
                         </li>                   
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/MannuLambrichts/ToolkitClassification"><u><i class="fab fa-github"></i> Github</u></a>
@@ -67,7 +66,7 @@
     
     <!-- Weight selectors -->
     <div class="container-fluid mb-4 pt-2">
-        <h6 class="text-uppercase">Weights</h6>
+        <!-- <h6 class="text-uppercase">Weights</h6> -->
         <div class="row" id="inputFields"><!-- filled in by JavaScript --></div>
         <button type="button" class="btn btn-success disabled m-2" id="calculateButton" onclick="calculate()">Update table</button>
     </div>
@@ -94,7 +93,7 @@
     <script>
 
         $(function () {
-        $('[data-toggle="popover"]').popover();
+            $('[data-toggle="popover"]').popover();
         });
 
 
@@ -367,15 +366,9 @@
 
                 row += '</tr>';
                 $('#toolkits').append(row);
-            }
+            }           
 
-            
-
-            $('#table').trigger("update");
-
-
-                                      
-
+            $('#table').trigger("update");                                     
         }
 
         function buildUserInput() {
