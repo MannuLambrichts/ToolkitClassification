@@ -62,24 +62,23 @@
         </nav>
 
         <!-- Content -->
-        <div class="container-fluid">
-            <div class="table-responsive">
-                <table class="table table-bordered tablesorter" id="table">    
-                    <thead class="thead-light">
-                        <tr id="column_group">
-                            <th class="text-center columnSelector-disable sorter-false" colspan="4"></th>
-                        </tr>
-                        <tr id="columns">
-                            <th class="text-center columnSelector-disable sorter-false">Nr</th>
-                            <th class="text-center columnSelector-disable">Name</th>
-                            <th class="text-center">Short name</th>
-                            <th class="text-center columnSelector-disable sorter-false">Image</th>
-                        </tr>        
-                    </thead>    
-                    <tbody id="toolkits"><!-- filled in by JavaScript --></tbody>
-                </table> 
-            </div>
+        <div class="table-responsive">
+            <table class="table table-bordered tablesorter" id="table">    
+                <thead class="thead-light">
+                    <tr id="column_group">
+                        <th class="text-center columnSelector-disable sorter-false" colspan="4"></th>
+                    </tr>
+                    <tr id="columns">
+                        <th class="text-center columnSelector-disable sorter-false">Nr</th>
+                        <th class="text-center columnSelector-disable">Name</th>
+                        <th class="text-center">Short name</th>
+                        <th class="text-center columnSelector-disable sorter-false">Image</th>
+                    </tr>        
+                </thead>    
+                <tbody id="toolkits"><!-- filled in by JavaScript --></tbody>
+            </table> 
         </div>
+       
 
         <script src="static/bootstrap4/js/bootstrap.bundle.min.js"></script>
         
@@ -89,202 +88,7 @@
                 $('[data-toggle="popover"]').popover();
             });
 
-
-            toolkits = {
-                ".NET Gadgeteer": {
-                    "title": ".NET Gadgeteer",
-                    "short_title": "Gadgeteer",
-                    "image": "dataset/img/Gadgeteer.jpg",
-                    "thumbnail": "dataset/img/Gadgeteer-thumbnail.jpg",
-                    "url": "https://dl.acm.org/doi/abs/10.1145/2445196.2445315",
-                    "notes": "In this paper we present the features of a new physical device prototyping platform called Microsoft .NET Gadgeteer along with our initial experiences using it to teach computer science in high schools. Gadgeteer makes it easy for newcomers to electronics and computing to plug together modules with varied functionality and to program the resulting system's behavior. We believe the platform is particularly suited to teaching modern programming concepts such as object-oriented, event-based programming and it could be a timely addition to established teaching tools given the current interest in improving high school computer science education in some regions. We have run a number of pilot studies in the US and in the UK with students of varying age and ability. Our results indicate that the tangible and expressive nature of Gadgeteer helps to engage and motivate a diverse set of students. We were also pleasantly surprised by the level of polish and sophistication of the devices which were built. We hope to further explore the potential of Gadgeteer for teaching in future work and we encourage others to build on our experiences.",
-                    "in_scope": true,
-                    "labels": {
-                        "Type of electronics": ["Type 3"],
-                        "Electronic sub-domain": ["Generic electronic systems"],
-                        "Promoted with user groups": ["K-12 Education", "Makers"],
-                        "Type of connection": ["Multi-wire cables"],
-                        "Connection mechanism": ["Friction fit"],
-                        "Connection topology": ["Hybrid star/bus"],
-                        "Programming style": ["Software code"],
-                        "Dependencies for programming": ["Wired computer"],
-                        "Dependency during deployment": ["Fully self-contained"],
-                        "Existing use": ["Multiple copies"],
-                        "Commercially available": ["Yes"],
-                        "Third party use": ["Yes"],
-                        "Open source": ["Partial"]
-                    }
-                },
-
-                "A construction kit for electronic textiles": {
-                    "title": "A construction kit for electronic textiles",
-                    "short_title": "e-textile construction kit",
-                    "image": "dataset/img/eTextileConstructionKit.png",
-                    "thumbnail": "dataset/img/eTextileConstructionKit-thumbnail.jpg",
-                    "url": "https://ieeexplore.ieee.org/document/4067731",
-                    "notes": "Construction kits have long been popular as educational artifacts, supporting and encouraging creative explorations of engineering and design; but to date, such kits have had little connection with the new and expanding field of electronic textiles (e-textiles). We believe that creating an e-textile construction kit could provide a powerful new medium to engage a diverse range of students in electrical engineering and computer science. This paper, then, describes a construction kit designed to introduce novices to electronics, computing and design via e-textiles. We describe each component of the kit, provide examples of constructions that were built with the kit, and examine the durability of these constructions. We conclude with a discussion of the results of preliminary user testing and an exploration of our plans for continued work in this area.",
-                    "in_scope": true,
-                    "labels": {
-                        "Type of electronics": ["Type 3"],
-                        "Electronic sub-domain": ["Wearables / textiles"],
-                        "Promoted with user groups": ["Makers"],
-                        "Type of connection": ["Individual conductors"],
-                        "Connection mechanism": ["Thread"],
-                        "Connection topology": ["Star"],
-                        "Programming style": ["Software code"],
-                        "Dependencies for programming": ["Wired computer"],
-                        "Dependency during deployment": ["Fully self-contained"],
-                        "Existing use": ["Only used in one-offs"],
-                        "Commercially available": ["Never"],
-                        "Third party use": ["Yes"],
-                        "Open source": ["Partial"]
-                    }
-                },
-
-                "A Method and Toolkit for Digital Musical Instruments Generating Ideas and Prototypes": {
-                    "title": "A Method and Toolkit for Digital Musical Instruments Generating Ideas and Prototypes",
-                    "short_title": "DMI toolkit",
-                    "image": "dataset/img/DMIToolkit.jpg",
-                    "thumbnail": "dataset/img/DMIToolkit-thumbnail.jpg",
-                    "url": "https://www.researchgate.net/publication/313538280_A_Method_and_Toolkit_for_Digital_Musical_Instruments_Generating_Ideas_and_Prototypes",
-                    "notes": "Digital musical instruments (DMIs) make up a class of devices in which gestural control and sound production are physically decoupled, but digitally mapped. This work discusses aspects of DMI design by focusing on the complexity of the design space and the importance of prototyping cycles. The authors' research questions cover how to provide an initial path for generating DMI ideas and how to reduce the time and effort required to build functional DMI prototypes. To address these questions, they propose a new methodology and an associated physical prototyping toolkit, which has building blocks inspired by of existing instruments. Preliminary tests with musicians and DMI designers revealed a strong potential for its use in the development of DMIs, and also uncovered limitations of the current toolkit. This article is part of a special issue on multimedia technologies for enriched music.",
-                    "in_scope": true,
-                    "labels": {
-                        "Type of electronics": ["Type 3"],
-                        "Electronic sub-domain": ["Musical instruments"],
-                        "Promoted with user groups": ["Makers"],
-                        "Type of connection": ["Direct module-to-module"],
-                        "Connection mechanism": ["Friction fit"],
-                        "Connection topology": ["Bus"],
-                        "Programming style": ["Software code"],
-                        "Dependencies for programming": ["Wired computer"],
-                        "Dependency during deployment": ["Always tethered"],
-                        "Existing use": ["Only used in one-offs"],
-                        "Commercially available": ["Never"],
-                        "Third party use": ["Yes"],
-                        "Open source": ["Fully"]
-                    }
-                },
-
-                "Adafruit Circuit Playground": {
-                    "title": "Adafruit Circuit Playground",
-                    "short_title": "Circuit Playground",
-                    "image": "dataset/img/CircuitPlayground.jpg",
-                    "thumbnail": "dataset/img/CircuitPlayground-thumbnail.jpg",
-                    "url": "https://learn.adafruit.com/introducing-circuit-playground/overview",
-                    "notes": "Would you like to learn electronics, with an all-in-one board that has sensors and LEDs built in? Circuit Playground is here, and it's the best way to practice programming on real hardware. No soldering or sewing required! Circuit Playground features an ATmega32u4 micro-processor, just like our popular Flora. It also is round and has alligator-clip pads around it. You can power it from USB, a AAA battery pack, or Lipoly (for advanced users). Program your code into it, then take it on the go.",
-                    "in_scope": true,
-                    "labels": {
-                        "Type of electronics": ["Type 2a"],
-                        "Electronic sub-domain": ["Generic electronic systems"],
-                        "Promoted with user groups": ["K-12 Education", "Makers"],
-                        "Type of connection": ["Individual conductors"],
-                        "Connection mechanism": ["Alligator clips"],
-                        "Connection topology": ["N/A"],
-                        "Programming style": ["Physical configuration"],
-                        "Dependencies for programming": ["Wired computer"],
-                        "Dependency during deployment": ["Fully self-contained"],
-                        "Existing use": ["Only used in one-offs"],
-                        "Commercially available": ["No longer"],
-                        "Third party use": ["No"],
-                        "Open source": ["Closed"]
-                    }
-                }
-            }
-
-            categories = {
-                "Nature and Application": {
-                    "Type of electronics": {
-                        "Type 2a":                      {"alternative": "2a", "background": "#8FDBF9"},
-                        "Type 2b":                      {"alternative": "2b", "background": "#8FDBF9"},
-                        "Type 3":                       {"alternative": "3", "background": "#4472C4", "foreground": "#ffffff"}
-                    },
-                    "Electronic sub-domain": {
-                        "Generic electronic systems":   {},
-                        "Home automation":              {},
-                        "Wearables / textiles":         {},
-                        "Interactive paper":            {},
-                        "Machines":                     {},
-                        "Biomedical sensing":           {},
-                        "Robotic vehicles / drones":    {},
-                        "Shape changing interfaces":    {},
-                        "Musical instruments":          {},
-                        "AI / ML":                      {}
-                    },
-                    "Promoted with user groups": {
-                        "K-12 Education":               {"icon": "static/img/education.png"},
-                        "Makers":                       {"icon": "static/img/makers.png"},
-                        "Professional engineers":       {"icon": "static/img/engineers.png"}
-                    }
-                },
-                "Assembly of Prototypes": {
-                    "Type of connection": {
-                        "Individual conductors":        {"alternative": "C1"},
-                        "Multi-wire cables":            {"alternative": "C+"},
-                        "Direct module-to-module":      {"alternative": "MM"},
-                        "Wireless":                     {"alternative": "W"}
-                    },
-                    "Connection mechanism": {
-                        "Friction fit":                 {"alternative": "F"},
-                        "Locking mechanism":            {"alternative": "L"},
-                        "Alligator clips":              {"alternative": "C"},
-                        "Screws":                       {"alternative": "S"},
-                        "Adhesive":                     {"alternative": "A"},
-                        "Thread":                       {"alternative": "T"},
-                        "Magnetic":                     {"alternative": "M"},
-                        "Wireless":                     {"alternative": "W"}
-                    },
-                    "Connection topology": {
-                        "Star":                         {"icon": "static/img/star.png"},
-                        "Hybrid star/bus":              {"icon": "static/img/hybrid.png"},
-                        "Bus":                          {"icon": "static/img/bus.png"},
-                        "N/A":                          {}
-                    }
-                },
-                "Deploying and Configuring": {
-                    "Programming style": {
-                        "Physical configuration":       {"icon": "static/img/physical.png"},
-                        "Software code":                {"icon": "static/img/software.png"},
-                        "N/A":                          {}
-                    },
-                    "Dependencies for programming": {
-                        "Wired computer":               {"icon": "static/img/tethered.png"},
-                        "Wireless programming":         {"icon": "static/img/wireless.png"},
-                        "Fully self-contained":         {"icon": "static/img/self.png"},
-                        "N/A":                          {}
-                    },
-                    "Dependency during deployment": {
-                        "Always tethered":              {"icon": "static/img/tethered.png"},
-                        "Wireless server needed":       {"icon": "static/img/wireless.png"},
-                        "Fully self-contained":         {"icon": "static/img/self.png"},
-                        "N/A":                          {}
-                    }
-                },
-                "Availability and Adoption": {
-                    "Existing use": {
-                        "Only used in one-offs":        {"icon": "static/img/one_offs.png"},
-                        "Multiple copies":              {"icon": "static/img/copies.png"},
-                        "In commercial products":       {"icon": "static/img/products.png"}
-                    },
-                    "Commercially available": {
-                        "Yes":                          {"icon": "static/img/available.png"},
-                        "No longer":                    {"icon": "static/img/no_longer_available.png"},
-                        "Never":                        {"icon": "static/img/never_available.png"}
-                    },
-                    "Third party use": {
-                        "Yes":                          {"alternative": "1st party use"},
-                        "No":                           {"alternative": "3rd party use"}
-                    },
-                    "Open source": {
-                        "Fully":                        {"icon": "static/img/open_source.png"},
-                        "Partial":                      {"icon": "static/img/partial_open_source.png"},
-                        "Closed":                       {}
-                    }
-                }
-            }
-
-
-            //$.getJSON("dataset/categories.json", function(categories) {  
+            $.getJSON("dataset/categories.json", function(categories) {  
                 // build the header of the table          
                 for (const group in categories) {
                     var i = 0;
@@ -295,7 +99,7 @@
                     $('#column_group').append('<th class="text-center sorter-false columnSelector-disable" colspan="' + i + '">' + group + '</th>');
                 }    
             
-                //$.getJSON("dataset/toolkits.json", function(toolkits) {  
+                $.getJSON("dataset/toolkits.json", function(toolkits) {  
 
                     // build the table
                     var i = 0;
@@ -360,16 +164,37 @@
                         widgets: ['filter', 'columnSelector', 'stickyHeaders', 'columns',],
                         widgetOptions: {
                             filter_reset: '.reset',
-                            filter_hideFilters: false,
                             filter_cssFilter: "form-control",
-                            stickyHeaders_offset: 58,
-                            columnSelector_container : $('#columnSelector'),
-                            columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                            columnSelector_layout: '<label><input type="checkbox"> {name}</label><br>'
                         },
-                    });                                 
-                //});
-            //});
+                    }); 
+                    
+                    // call this function to copy the column selection code into the popover
+                    $.tablesorter.columnSelector.attachTo( $('#table'), '#popover-target');
+
+                    $('#select_popover').popover({
+                        placement: 'auto',
+                        html: true,
+                        content: $('#popover-target'),
+                        title: "Select columns"
+                    });
+
+
+                    // enable button once toolkits are loaded
+                    button_enabled = true;
+                    $("#calculateButton").removeClass('disabled');                         
+                });
+            });
 
         </script>
     </body>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3 bg-dark text-light">© 2021 Copyright - Resources: 
+            <u><a class="text-light" href="https://getbootstrap.com/">Bootstrap4</a></u>, 
+            <u><a class="text-light" href="https://jquery.com/">JQuery</a></u>, 
+            <u><a class="text-light" href="https://fontawesome.com/">FontAwesome</u></a>, 
+            <u><a class="text-light" href="https://mottie.github.io/tablesorter">TableSorter</u></a>
+        </div>    
+    </footer>
 </html>

@@ -1,90 +1,90 @@
 {
     "Nature and Application": {
         "Type of electronics": {
-            "Type 2a": {"background": "#0fffff"},
-            "Type 2b": {"background": "#f0ffff"},
-            "Type 3": {"background": "#ff0fff"}
+            "Type 2a":                      {"alternative": "2a", "background": "#8FDBF9"},
+            "Type 2b":                      {"alternative": "2b", "background": "#8FDBF9"},
+            "Type 3":                       {"alternative": "3", "background": "#4472C4", "foreground": "#ffffff"}
         },
         "Electronic sub-domain": {
-            "Generic electronic systems": {"background": "#fff0ff"},
-            "Home automation": {"background": "#ffff0f"},
-            "Wearables / textiles": {"background": "#fffff0"},
-            "Interactive paper": {"background": "#fff0ff"},
-            "Machines": {"background": "#ffff0f"},
-            "Biomedical sensing": {"background": "#fffff0"},
-            "Robotic vehicles / drones": {"background": "#fff0ff"},
-            "Shape changing interfaces": {"background": "#ffff0f"},
-            "Musical instruments": {"background": "#fffff0"},
-            "AI / ML": {"background": "#fffff0"}
+            "Generic electronic systems":   {},
+            "Home automation":              {},
+            "Wearables / textiles":         {},
+            "Interactive paper":            {},
+            "Machines":                     {},
+            "Biomedical sensing":           {},
+            "Robotic vehicles / drones":    {},
+            "Shape changing interfaces":    {},
+            "Musical instruments":          {},
+            "AI / ML":                      {}
         },
         "Promoted with user groups": {
-            "K-12 Education": {"background": "#fff0ff"},
-            "Makers": {"background": "#ffff0f"},
-            "Professional engineers": {"background": "#fffff0"}
+            "K-12 Education":               {"icon": "static/img/education.png"},
+            "Makers":                       {"icon": "static/img/makers.png"},
+            "Professional engineers":       {"icon": "static/img/engineers.png"}
         }
     },
     "Assembly of Prototypes": {
         "Type of connection": {
-            "Individual conductors": {"color": "#0fffff"},
-            "Multi-wire cables": {"color": "#f0ffff"},
-            "Direct module-to-module": {"color": "#ff0fff"},
-            "Wireless": {"color": "#ff0fff"}
+            "Individual conductors":        {"alternative": "C1"},
+            "Multi-wire cables":            {"alternative": "C+"},
+            "Direct module-to-module":      {"alternative": "MM"},
+            "Wireless":                     {"alternative": "W"}
         },
         "Connection mechanism": {
-            "Friction fit": {"background": "#fff0ff"},
-            "Locking mechanism": {"color": "#ffff0f"},
-            "Alligator clips": {"color": "#fffff0"},
-            "Screws": {"background": "#fff0ff"},
-            "Adhesive": {"color": "#ffff0f"},
-            "Thread": {"color": "#fffff0"},
-            "Magnetic": {"background": "#fff0ff"},
-            "Wireless": {"color": "#ffff0f"}
+            "Friction fit":                 {"alternative": "F"},
+            "Locking mechanism":            {"alternative": "L"},
+            "Alligator clips":              {"alternative": "C"},
+            "Screws":                       {"alternative": "S"},
+            "Adhesive":                     {"alternative": "A"},
+            "Thread":                       {"alternative": "T"},
+            "Magnetic":                     {"alternative": "M"},
+            "Wireless":                     {"alternative": "W"}
         },
         "Connection topology": {
-            "Star": {"color": "#fff0ff"},
-            "Hybrid star/bus": {"color": "#ffff0f"},
-            "Bus": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Star":                         {"icon": "static/img/star.png"},
+            "Hybrid star/bus":              {"icon": "static/img/hybrid.png"},
+            "Bus":                          {"icon": "static/img/bus.png"},
+            "N/A":                          {}
         }
     },
     "Deploying and Configuring": {
         "Programming style": {
-            "Physical configuration": {"color": "#0fffff"},
-            "Software code": {"color": "#f0ffff"},
-            "N/A": {"color": "#ff0fff"}
+            "Physical configuration":       {"icon": "static/img/physical.png"},
+            "Software code":                {"icon": "static/img/software.png"},
+            "N/A":                          {}
         },
         "Dependencies for programming": {
-            "Wired computer": {"color": "#fff0ff"},
-            "Wireless programming": {"color": "#ffff0f"},
-            "Fully self-contained": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Wired computer":               {"icon": "static/img/tethered.png"},
+            "Wireless programming":         {"icon": "static/img/wireless.png"},
+            "Fully self-contained":         {"icon": "static/img/self.png"},
+            "N/A":                          {}
         },
         "Dependency during deployment": {
-            "Always tethered": {"color": "#fff0ff"},
-            "Wireless server needed": {"color": "#ffff0f"},
-            "Fully self-contained": {"color": "#fffff0"},
-            "N/A": {"color": "#fffff0"}
+            "Always tethered":              {"icon": "static/img/tethered.png"},
+            "Wireless server needed":       {"icon": "static/img/wireless.png"},
+            "Fully self-contained":         {"icon": "static/img/self.png"},
+            "N/A":                          {}
         }
     },
     "Availability and Adoption": {
         "Existing use": {
-            "Only used in one-offs": {"color": "#0fffff"},
-            "Multiple copies": {"color": "#f0ffff"},
-            "In commercial products": {"color": "#ff0fff"}
+            "Only used in one-offs":        {"icon": "static/img/one_offs.png"},
+            "Multiple copies":              {"icon": "static/img/copies.png"},
+            "In commercial products":       {"icon": "static/img/products.png"}
         },
         "Commercially available": {
-            "Yes": {"color": "#fff0ff"},
-            "No longer": {"color": "#ffff0f"},
-            "Never": {"color": "#fffff0"}
+            "Yes":                          {"icon": "static/img/available.png"},
+            "No longer":                    {"icon": "static/img/no_longer_available.png"},
+            "Never":                        {"icon": "static/img/never_available.png"}
         },
         "Third party use": {
-            "Yes": {"color": "#fff0ff"},
-            "No": {"color": "#ffff0f"}
+            "Yes":                          {"alternative": "1st party use"},
+            "No":                           {"alternative": "3rd party use"}
         },
         "Open source": {
-            "Fully": {"color": "#fff0ff"},
-            "Partial": {"color": "#ffff0f"},
-            "Closed": {"color": "#fffff0"}
+            "Fully":                        {"icon": "static/img/open_source.png"},
+            "Partial":                      {"icon": "static/img/partial_open_source.png"},
+            "Closed":                       {}
         }
     }
 }
