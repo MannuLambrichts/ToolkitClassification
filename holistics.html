@@ -14,79 +14,62 @@
     <script src="static/tablesorter/jquery.tablesorter.js"></script>
     <script src="static/tablesorter/jquery.tablesorter.widgets.js"></script>
     <script src="static/tablesorter/widget-columnSelector.js"></script>
+    <!-- <script src="static/popper/popper.min.js"></script> -->
 
     <title>Electronics Toolkit Classification</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand my-auto" href="#" >
-          <!-- <img src="http://placehold.it/120x60"> -->
-          ELECTRONICS TOOLKIT CLASSIFICATION
-        </a>
+        <h1 class="navbar-brand my-auto text-uppercase" href="#" >
+            Electronics Toolkit Classification
+            <br>
+            <small class="font-italic">Holistic Characteristics</small>
+        </h1>
 
         <div class="collapse navbar-collapse flex-md-column" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Objective characteristics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="holistics.html">Holistic characteristics</a>
+                    <a class="nav-link disabled" href="holistics.html">Holistic characteristics</a>
                 </li>
             </ul>
                 <div class="input-group">
                     <ul class="navbar-nav ml-auto small">
                         <li class="nav-item">
-                            <input id="colSelect1" type="checkbox" class="hidden">
-                            <label class="nav-link" for="colSelect1">Select columns</label>
-                            <div id="columnSelector" class="columnSelector" style="z-index: 1070;"></div>
+                            <button type="button" class="btn btn-link btn-sm nav-link" id="select_popover"><i class="fas fa-filter"></i> Select columns</button>
+                            <div class="hidden"><div id="popover-target"><!-- filled in by JavaScript --></div></div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-lightbulb"></i> Hints</a>
-                        </li>                        
+                            <button type="button" class="btn btn-link btn-sm nav-link" data-toggle="popover" title="Hints and tips" data-html="true" data-placement="auto" data-content="<ul><li>Use <i>shift + scroll</i> to scroll horizontally.</li><li>Order columns by clicking on the header.</li><li>Use <i>shift + click</i> to order multiple columns.</li><li>Use the text boxes below the header to filter rows.</li><li>Use the input fields to change the weights for each objective characteristic.</li></ul>"><i class="fas fa-lightbulb"></i> Hints</button>
+                        </li>     
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/MannuLambrichts/ToolkitClassification"><i class="fab fa-github"></i> Github</a>
+                            <a class="nav-link" href="https://dl.acm.org/conference/icons/proceedings"><u><img src="static/img/acmdl.png" class="img-fluid" style="max-width:17px; max-height: 17px;" alt="Illustration"> ACM DL</u></a>
+                        </li>                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/MannuLambrichts/ToolkitClassification"><u><i class="fab fa-github"></i> Github</u></a>
                         </li>
                     </ul>
                 </div>
             </form>
         </div>
     </nav>
+
+      
+
+      
     
-    <!-- Header -->
-    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-           
-        
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <input id="colSelect1" type="checkbox" class="hidden">
-                        <label class="nav-link btn m-0" for="colSelect1">Filter columns</label>
-                        <div id="columnSelector" class="columnSelector"></div>
-                    </li>
-                </ul> 
-            </div>
-        </div>
-
-    </nav> -->
-
     <!-- Weight selectors -->
-    <div class="container-fluid mb-4">
+    <div class="container-fluid mb-4 pt-2">
+        <h6 class="text-uppercase">Weights</h6>
         <div class="row" id="inputFields"><!-- filled in by JavaScript --></div>
-        <button type="button" class="btn btn-success disabled m-2" id="calculateButton" onclick="calculate()">Update</button>
+        <button type="button" class="btn btn-success disabled m-2" id="calculateButton" onclick="calculate()">Update table</button>
     </div>
 
     <!-- Content -->
@@ -106,9 +89,13 @@
         </div>
     </div>
 
-    <script src="static/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="static/bootstrap4/js/bootstrap.bundle.min.js"></script>
     
     <script>
+
+        $(function () {
+        $('[data-toggle="popover"]').popover();
+        });
 
 
         dataset_toolkits = {
@@ -460,10 +447,21 @@
                         filter_hideFilters: false,
                         filter_cssFilter: "form-control",
                         stickyHeaders_offset: 58,
-                        columnSelector_container : $('#columnSelector'),
-                        columnSelector_layout: '<label><input type="checkbox"> {name}</label>'
+                        //columnSelector_container : $('#columnSelector'),
+                        columnSelector_layout: '<label><input type="checkbox"> {name}</label><br>'
                     },
                 }); 
+                
+                // call this function to copy the column selection code into the popover
+                $.tablesorter.columnSelector.attachTo( $('#table'), '#popover-target');
+
+                $('#select_popover').popover({
+                    placement: 'auto',
+                    html: true,
+                    content: $('#popover-target'),
+                    title: "Select columns"
+                });
+
 
                 // enable button once toolkits are loaded
                 button_enabled = true;
@@ -472,5 +470,20 @@
         //});
 
     </script>
+
+
 </body>
+<footer class="bg-light text-center text-lg-start fixed-bottom">
+
+    <div class="text-center p-3 bg-dark text-light">© 2021 Copyright - Resources: 
+        <u><a class="text-light" href="https://getbootstrap.com/">Bootstrap4</a></u>, 
+        <u><a class="text-light" href="https://jquery.com/">JQuery</a></u>, 
+        <u><a class="text-light" href="https://fontawesome.com/">FontAwesome</u></a>, 
+        <u><a class="text-light" href="https://mottie.github.io/tablesorter">TableSorter</u></a>
+    </div>
+
+</footer>
+
 </html>
+
+
