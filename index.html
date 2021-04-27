@@ -125,7 +125,7 @@
                                             var text_color = ('foreground' in categories[group][category][value])? 'color:' + categories[group][category][value]['foreground'] + ';' : '';
 
                                             if ('icon' in categories[group][category][value]) {
-                                                row += '<p class="mb-0 text-center">' + '<img src="' + categories[group][category][value]['icon'] + '" class="mr-auto" style="max-width:25px; max-height: 25px;" alt="ACM DL icon">' + '</p>';
+                                                row += '<p class="mb-0 text-center">' + '<img src="' + categories[group][category][value]['icon'] + '" style="max-width:25px; max-height: 25px;" alt="' + value + '">' + '</p>';
                                                 row += '<p class="text-center font-italic small">(' + value + ')</p>';
                                             } else if ('alternative' in categories[group][category][value]) {
                                                 row += '<p class="mb-0 text-center font-weight-bold"><span class="rounded-circle" style="' + background_color + text_color + 'min-width: 25px; height:25px; display:inline-block">' + categories[group][category][value]['alternative'] + '</span></p>';
